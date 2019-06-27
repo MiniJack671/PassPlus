@@ -1,0 +1,8 @@
+name: PassPlus
+version: ${project.version}
+main: dev.nuer.pp.PassPlus
+api-version: 1.13
+prefix: Pass+
+authors: [Nuer]
+description: A Minecraft plugin remake of Fornite's Battepass, the plugin features rich customisation and the ability to expand.
+website: https://nuer.dev

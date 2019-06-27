@@ -1,0 +1,6 @@
+player-welcome:
+  - '&7 '
+  - '&a&lPass+&2: &7Welcome &e{player}&7, here are your current battlepass stats.'
+  - '&6 - &eTier: &f{tier}'
+  - '&6 - &e{experience-name}: &f{exp}'
+  - '&7 '
