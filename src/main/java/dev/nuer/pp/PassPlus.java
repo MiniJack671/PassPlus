@@ -1,7 +1,9 @@
 package dev.nuer.pp;
 
-import dev.nuer.pp.managers.FileManager;
-import dev.nuer.pp.managers.SetupManager;
+import dev.nuer.pp.cmd.PassAdminCmd;
+import dev.nuer.pp.cmd.PassCmd;
+import dev.nuer.pp.enable.FileManager;
+import dev.nuer.pp.enable.SetupManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
@@ -47,6 +49,7 @@ public final class PassPlus extends JavaPlugin {
      * Registers all of the plugin commands
      */
     private void registerCommads() {
-
+        getCommand("pass-plus").setExecutor(new PassCmd());
+        getCommand("pass-plus-admin").setExecutor(new PassAdminCmd());
     }
 }

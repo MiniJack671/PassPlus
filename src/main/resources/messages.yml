@@ -1,6 +1,20 @@
+# -- General Messages --
 player-welcome:
   - '&7 '
   - '&a&lPass+&2: &7Welcome &e{player}&7, here are your current battlepass stats.'
   - '&6 - &eTier: &f{tier}'
   - '&6 - &e{experience-name}: &f{exp}'
   - '&7 '
+
+# -- Pass command messages --
+no-permission:
+  - '&a&lPass+&2: &fPermission Debug'
+  - '&cError! &7You do not have permission to use that.'
+  - '&6Permission required: &e{node}&7.'
+
+# -- Admin command messages --
+admin-cmd-help:
+  - '&a&lPass+&2&lAdmin&e: &7Check the GitHub for a detailed command list: &f&n[link]'
+
+admin-cmd-tier-manipulation:
+  - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7is now at tier &e{tier}'

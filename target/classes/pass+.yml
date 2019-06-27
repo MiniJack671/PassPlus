@@ -9,4 +9,8 @@ storage-configuration:
   database: 'john_doe'
   password: 'Passw0rd1'
 
+# The name for the experience used throughout the plugin
 experience-name: 'Enigma'
+
+# If the welcome message should be sent to the player
+enable-welcome-message: true

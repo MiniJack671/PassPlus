@@ -1,4 +1,4 @@
-package dev.nuer.pp.managers;
+package dev.nuer.pp.enable;
 
 import dev.nuer.pp.utils.YamlFileUtil;
 import org.bukkit.configuration.file.YamlConfiguration;

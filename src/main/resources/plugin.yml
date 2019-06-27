@@ -6,3 +6,13 @@ prefix: Pass+
 authors: [Nuer]
 description: A Minecraft plugin remake of Fornite's Battepass, the plugin features rich customisation and the ability to expand.
 website: https://nuer.dev
+commands:
+  pass-plus:
+    description: Main command for Pass+, try `/bp help` for command help.
+    usage: /<command>
+    aliases: [bp, pass, pass+, p+, pp]
+
+  pass-plus-admin:
+    description: Pass+ command designed for administrative use, try `/ppa help` for command help.
+    usage: /<command>
+    aliases: [passa, p+a, ppa]

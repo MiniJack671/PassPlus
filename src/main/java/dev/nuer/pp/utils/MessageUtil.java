@@ -1,6 +1,6 @@
 package dev.nuer.pp.utils;
 
-import dev.nuer.pp.managers.FileManager;
+import dev.nuer.pp.enable.FileManager;
 import org.bukkit.entity.Player;
 
 /**

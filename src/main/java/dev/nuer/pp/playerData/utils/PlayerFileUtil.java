@@ -30,7 +30,6 @@ public class PlayerFileUtil {
             setupPlayerFileDefaults(config);
         }
         save();
-        reload();
     }
 
     private void setupPlayerFileDefaults(YamlConfiguration config) {
@@ -52,6 +51,7 @@ public class PlayerFileUtil {
         } catch (IOException e) {
             PassPlus.log.severe("Critical error saving the file: " + fileName + ", please contact nbdSteve#0583 on discord.");
         }
+        reload();
     }
 
     public void reload() {
