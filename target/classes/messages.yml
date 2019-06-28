@@ -6,15 +6,26 @@ player-welcome:
   - '&6 - &e{experience-name}: &f{exp}'
   - '&7 '
 
+tier-query:
+  - '&a&lPass+&2: &7You are currently tier &e{tier}&7.'
+
 # -- Pass command messages --
-no-permission:
+permission-debug:
   - '&a&lPass+&2: &fPermission Debug'
   - '&cError! &7You do not have permission to use that.'
   - '&6Permission required: &e{node}&7.'
+
+command-debug:
+  - '&a&lPass+&2: &fCommand Debug'
+  - '&cError! &7There was a problem with the command you entered, please read the reason.'
+  - '&6Reason: &e{reason}&7.'
 
 # -- Admin command messages --
 admin-cmd-help:
   - '&a&lPass+&2&lAdmin&e: &7Check the GitHub for a detailed command list: &f&n[link]'
 
 admin-cmd-tier-manipulation:
-  - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7is now at tier &e{tier}'
+  - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7is now at tier &e{tier}&7.'
+
+give-success:
+  - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7has received a copy of &aPass+&7.'

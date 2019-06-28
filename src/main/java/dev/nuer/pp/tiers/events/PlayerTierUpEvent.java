@@ -9,10 +9,12 @@ public class PlayerTierUpEvent extends Event implements Cancellable {
     private static final HandlerList handlers = new HandlerList();
 
     private Player player;
+    private int newPlayerTier;
     private boolean cancel;
 
-    public PlayerTierUpEvent(Player player) {
+    public PlayerTierUpEvent(Player player, int newPlayerTier) {
         this.player = player;
+        this.newPlayerTier = newPlayerTier;
     }
 
     public static HandlerList getHandlerList() {
@@ -21,6 +23,10 @@ public class PlayerTierUpEvent extends Event implements Cancellable {
 
     public Player getPlayer() {
         return player;
+    }
+
+    public int getNewPlayerTier() {
+        return newPlayerTier;
     }
 
     @Override

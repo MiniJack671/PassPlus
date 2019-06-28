@@ -14,9 +14,6 @@ public class PlayerTierManager {
     public static void incrementTier(Player player, int numberOfTiersToIncrement) {
         try {
             setTier(player, getTier(player) + numberOfTiersToIncrement);
-            for (int i = 0; i < numberOfTiersToIncrement; i++) {
-                Bukkit.getPluginManager().callEvent(new PlayerTierUpEvent(player));
-            }
         } catch (ExceedMaxPlayerTierException | BelowMinimumPlayerTierException e) {
             //Do nothing, the exception handles debugging with a message
         }
@@ -39,7 +36,7 @@ public class PlayerTierManager {
         //Register the increment events if the tier is increasing
         if (tier > getTier(player)) {
             for (int i = 0; i < tier - getTier(player); i++) {
-                Bukkit.getPluginManager().callEvent(new PlayerTierUpEvent(player));
+                Bukkit.getPluginManager().callEvent(new PlayerTierUpEvent(player, tier));
             }
         }
         //If not, then set the players tier

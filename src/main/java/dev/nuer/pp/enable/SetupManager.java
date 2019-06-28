@@ -1,5 +1,6 @@
 package dev.nuer.pp.enable;
 
+import dev.nuer.pp.gui.listener.GuiClickListener;
 import dev.nuer.pp.playerData.listeners.DataCreationOnJoin;
 import dev.nuer.pp.tiers.listeners.PlayerTierListener;
 import org.bukkit.plugin.Plugin;
@@ -21,7 +22,7 @@ public class SetupManager {
         fileManager.add("config", "pass+.yml");
         fileManager.add("messages", "messages.yml");
         fileManager.add("tier_config", "tiers" + File.separator + "tier-config.yml");
-//        fileManager.add("tier_list", "tiers" + File.separator + "tier-list.yml");
+        fileManager.add("challenge_config", "challenges" + File.separator + "challenge-config.yml");
     }
 
     /**
@@ -33,5 +34,6 @@ public class SetupManager {
         PluginManager pm = instance.getServer().getPluginManager();
         pm.registerEvents(new DataCreationOnJoin(), instance);
         pm.registerEvents(new PlayerTierListener(), instance);
+        pm.registerEvents(new GuiClickListener(), instance);
     }
 }

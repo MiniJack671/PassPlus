@@ -14,3 +14,85 @@ experience-name: 'Enigma'
 
 # If the welcome message should be sent to the player
 enable-welcome-message: true
+
+main-menu:
+  size: 18
+  name: '&a&lPass+'
+  1:
+    slot: 1
+    status:
+      add-lore: false
+    material: 'nether_star'
+    data-value: 0
+    name: '&b&lTiers'
+    lore:
+      - '&7 '
+      - '&eTiers are unlocked with {experience-name}&7.'
+      - '&eOnce you gain a certain amount of {experience-name}&7,'
+      - '&eyou will automatically tier up&7.'
+      - '&eTiering up unlocks the loot for that tier.'
+      - '&7 '
+      - '&7&o((left-click to view the full tier list for &f[server]&7&o))'
+      - '&7 '
+      - '&7Interesting in embarking on the &aPass+ &7journey?'
+      - '&7Purchase your copy from &f&nshop.example.com&7 for &c&l$-.00'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    open-tiers: true
+  2:
+    slot: 4
+    status:
+      add-lore: true
+      node-required: 'pass+.pass'
+      locked-lore:
+        - '&7You &c&ndo not&7 have a copy of &aPass+&7.'
+        - '&7 '
+        - '&7Purchase a copy from the server store.'
+        - '&f&nstore.example.com&7 for &c&l$-.00'
+        - '&7 '
+        - '&4&l*&6&l*&4&l* &c&lLOCKED &4&l*&6&l*&4&l*'
+      unlocked-lore:
+        - '&7Player: &e{player}'
+        - '&7Current tier: &e{tier}'
+        - '&7Current {experience-name}: &e{exp}&7/&e100'
+        - '&7 '
+        - '&2&l*&f&l*&2&l* &a&lUNLOCKED &2&l*&f&l*&2&l*'
+    material: 'ender_chest'
+    data-value: 0
+    name: '&a&lBattlepass'
+    lore:
+      - '&7 '
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  3:
+    slot: 7
+    status:
+      add-lore: false
+    material: 'enchanted_book'
+    data-value: 0
+    name: '&e&lChallenges'
+    lore:
+      - '&7Temp'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    open-challenges: true
+  4:
+    slot: 13
+    status:
+      add-lore: false
+    material: 'barrier'
+    data-value: 0
+    name: '&c&lExit'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to exit this gui.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    exit-button: true
