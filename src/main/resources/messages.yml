@@ -27,5 +27,8 @@ admin-cmd-help:
 admin-cmd-tier-manipulation:
   - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7is now at tier &e{tier}&7.'
 
+admin-cmd-experience-manipulation:
+  - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7now has &e{exp} {experience-name}&7.'
+
 give-success:
   - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7has received a copy of &aPass+&7.'

@@ -36,7 +36,7 @@ public class PlayerFileUtil {
         //Set defaults for the information about the players tiers and currency
         config.createSection("pass-info");
         config.set("pass-info.tier", 0);
-        config.set("pass-info.experience", 0);
+        config.set("pass-info.experience", 0.0);
         //Set defaults for the information about the players current & completed challenges
         config.createSection("pass-challenges");
         config.set("pass-challenges.active", "[ ]");

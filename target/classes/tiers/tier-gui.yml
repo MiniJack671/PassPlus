@@ -1,0 +1,72 @@
+status:
+  complete: '&2&l*&f&l*&2&l* &a&lCOMPLETED &2&l*&f&l*&2&l*'
+  active: '&6&l*&f&l*&6&l* &e&lACTIVE &6&l*&f&l*&6&l*'
+  locked: '&4&l*&f&l*&4&l* &c&lLOCKED &4&l*&f&l*&4&l*'
+
+tier-gui:
+  size: 54
+  name: '&b&lTiers'
+  1:
+    tier: 1
+    slot: 0
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 1'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &ePurchase Pass+'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$25,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  2:
+    tier: 2
+    slot: 1
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 2'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e25.80 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e25.80'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &eTier I Sell Wand &7(&650 Uses&7).'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  3:
+    tier: 3
+    slot: 2
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 3'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e42.89 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e42.89'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e7x7 Trench Pickaxe &7(&615,000 Uses&7).'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'

@@ -14,12 +14,6 @@ import java.util.UUID;
 public class GiveCmd {
 
     public static void onCmd(CommandSender sender, String[] args) {
-        if (!sender.hasPermission("pass+.admin-cmd.give")) {
-            if (sender instanceof Player) {
-                MessageUtil.message("messages", "permission-debug", (Player) sender, "{node}", "pass+.admin-cmd.give");
-            }
-            return;
-        }
         Player target = null;
         try {
             target = Bukkit.getPlayer(args[1]);

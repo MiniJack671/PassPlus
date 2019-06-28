@@ -11,13 +11,6 @@ import org.bukkit.entity.Player;
 public class TierCmd {
 
     public static void onCmd(CommandSender sender, String[] args) {
-        if (!sender.hasPermission("pass+.admin-cmd.tier")) {
-            if (sender instanceof Player) {
-                MessageUtil.message("messages", "permission-debug", (Player) sender,
-                        "{node}", "pass+.admin-cmd.tier");
-            }
-            return;
-        }
         if (args[1].equalsIgnoreCase("set")
                 || args[1].equalsIgnoreCase("=")) {
             try {

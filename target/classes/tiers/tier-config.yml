@@ -1,50 +1,29 @@
 max-tier: 25
 
-status:
-  complete: '&2&l*&3&l*&2&l* &a&lCOMPLETED &2&l*&3&l*&2&l*'
-  active: '&6&l*&f&l*&6&l* &e&lACTIVE &6&l*&f&l*&6&l*'
-  locked: '&4&l*&6&l*&4&l* &c&lLOCKED &4&l*&6&l*&4&l*'
-
 1:
-  # -- This top section is for the gui
-  material: emerald
-  data-value: 0
-  name: '&b&lTier 1'
-  lore:
-    - '&7 '
-    - '&7Requirements:'
-    - '&7   &ePurchase Pass+'
-    - '&7 '
-    - '{status}'
-  enchantments:
-    - 'lure:1'
-  item-flags:
-    - 'hide_enchants'
   # -- This message(s) and command(s) will be run when the player reaches this tier
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e1&7.'
       - '&7&o((Tier &e1 &7&orewards have been given to you.))'
     commands:
-      - 'eco give {player} 10000'
+      - 'eco give {player} 25000'
 #
 2:
-  material: emerald
-  data-value: 0
-  name: '&b&lTier 2'
-  lore:
-    - '&7 '
-    - '&7Requirements: '
-    - '&7   &e10 {exp-name}'
-    - '&7 '
-    - '{status}'
-  enchantments:
-    - 'lure:1'
-  item-flags:
-    - 'hide_enchants'
+  experience-to-level: 25.80
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e2&7.'
       - '&7&o((Tier &e2 &7&orewards have been given to you.))'
     commands:
-      - 'kick {player} Nice tier!'
+      - 't+ give {player} sell stick:0 1 1 50'
+      - 'eco give {player} 25000'
+#
+3:
+  experience-to-level: 42.89
+  rewards:
+    message:
+      - '&a&lPass+&2: &7Congratulations you are now tier &e3&7.'
+      - '&7&o((Tier &e3 &7&orewards have been given to you.))'
+    commands:
+      - 't+ give {player} trench diamond_pickaxe:0 3 15000'
