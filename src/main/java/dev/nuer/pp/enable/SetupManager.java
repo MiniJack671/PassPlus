@@ -25,6 +25,10 @@ public class SetupManager {
         fileManager.add("tier_config", "tiers" + File.separator + "tier-config.yml");
         fileManager.add("tier_gui", "tiers" + File.separator + "tier-gui.yml");
         fileManager.add("challenge_config", "challenges" + File.separator + "challenge-config.yml");
+        //Load the week configuration for the challenges.
+        for (int i = 1; i <= FileManager.get("challenge_config").getInt("number-of-weeks"); i++) {
+            fileManager.add("challenges_week_" + i, "challenges" + File.separator + "week-" + i + ".yml");
+        }
     }
 
     /**

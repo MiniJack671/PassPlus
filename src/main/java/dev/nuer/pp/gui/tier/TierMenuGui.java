@@ -1,8 +1,10 @@
 package dev.nuer.pp.gui.tier;
 
+import dev.nuer.pp.PassPlus;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.experience.PlayerExperienceManager;
 import dev.nuer.pp.gui.AbstractGui;
+import dev.nuer.pp.gui.menu.MainMenuGui;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
 import dev.nuer.pp.utils.ItemBuilderUtil;
@@ -21,8 +23,11 @@ public class TierMenuGui extends AbstractGui {
                 ColorUtil.colorize(FileManager.get("tier_gui").getString("tier-gui.name")));
         for (int i = 0; i < FileManager.get("tier_gui").getInt("tier-gui.size"); i++) {
             try {
+                int id = i;
                 setItemInSlot(FileManager.get("tier_gui").getInt("tier-gui." + i + ".slot"), buildItem(i, player), player1 -> {
-
+                    if (FileManager.get("tier_gui").getBoolean("tier-gui." + id + ".exit-button")) {
+                        new MainMenuGui(player1).open(player1);
+                    }
                 });
             } catch (Exception e) {
                 //Do nothing, item just is not loaded for this slot
@@ -45,7 +50,7 @@ public class TierMenuGui extends AbstractGui {
         if (completed(config.getInt("tier-gui." + i + ".tier"), PlayerTierManager.getTier(player))) {
             ibu.replaceLorePlaceholder("{exp}", "MAX");
         } else {
-            ibu.replaceLorePlaceholder("{exp}", String.valueOf(PlayerExperienceManager.getExperience(player)));
+            ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
         }
         ibu.replaceLorePlaceholder("{status}", getStatus(config.getInt("tier-gui." + i + ".tier"), PlayerTierManager.getTier(player)));
         //Add item enchantments

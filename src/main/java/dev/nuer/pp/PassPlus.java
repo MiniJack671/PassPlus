@@ -6,6 +6,7 @@ import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.enable.SetupManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.text.DecimalFormat;
 import java.util.logging.Logger;
 
 /**
@@ -16,6 +17,8 @@ public final class PassPlus extends JavaPlugin {
     public static PassPlus instance;
     //Store the plugins logger provided by Bukkit
     public static Logger log;
+    //Static way to format price placeholders
+    public static DecimalFormat numberFormat = new DecimalFormat("#,###.##");
 
     /**
      * Method called on plugin start up

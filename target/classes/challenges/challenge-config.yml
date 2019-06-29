@@ -1,0 +1,82 @@
+number-of-weeks: 3
+
+status:
+  unlocked: '&2&l*&f&l*&2&l* &a&lUNLOCKED &2&l*&f&l*&2&l*'
+  locked: '&4&l*&f&l*&4&l* &c&lLOCKED &4&l*&f&l*&4&l*'
+
+challenge-menu-gui:
+  size: 18
+  name: '&e&lChallenges'
+  1:
+    week: 1
+    slot: 0
+    material: 'book'
+    data-value: 0
+    name: '&6&lWeek #1'
+    lore:
+      - '&7 '
+      - '&eUnlocks in:'
+      - ' &f* &b{days} &7Days'
+      - ' &f* &b{hours} &7Hours'
+      - ' &f* &b{minutes} &7Minutes'
+      - ' &f* &b{seconds} &7Seconds'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    open-week-1: true
+  2:
+    week: 2
+    slot: 1
+    material: 'book'
+    data-value: 0
+    name: '&6&lWeek #2'
+    lore:
+      - '&7 '
+      - '&eUnlocks in:'
+      - ' &f* &b{days} &7Days'
+      - ' &f* &b{hours} &7Hours'
+      - ' &f* &b{minutes} &7Minutes'
+      - ' &f* &b{seconds} &7Seconds'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    open-week-2: true
+  3:
+    week: 3
+    slot: 2
+    material: 'book'
+    data-value: 0
+    name: '&6&lWeek #3'
+    lore:
+      - '&7 '
+      - '&eUnlocks in:'
+      - ' &f* &b{days} &7Days'
+      - ' &f* &b{hours} &7Hours'
+      - ' &f* &b{minutes} &7Minutes'
+      - ' &f* &b{seconds} &7Seconds'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    open-week-3: true
+  4:
+    week: 1
+    slot: 13
+    material: 'barrier'
+    data-value: 0
+    name: '&c&lExit'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to exit this gui.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    exit-button: true

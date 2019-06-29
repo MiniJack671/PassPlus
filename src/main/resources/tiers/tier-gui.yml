@@ -70,3 +70,15 @@ tier-gui:
       - 'lure:1'
     item-flags:
       - 'hide_enchants'
+  4:
+    slot: 49
+    material: 'barrier'
+    data-value: 0
+    name: '&c&lExit'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to exit this gui.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    exit-button: true

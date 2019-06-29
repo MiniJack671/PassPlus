@@ -1,8 +1,10 @@
 package dev.nuer.pp.gui.menu;
 
+import dev.nuer.pp.PassPlus;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.experience.PlayerExperienceManager;
 import dev.nuer.pp.gui.AbstractGui;
+import dev.nuer.pp.gui.challenge.ChallengeMenuGui;
 import dev.nuer.pp.gui.tier.TierMenuGui;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
@@ -27,7 +29,7 @@ public class MainMenuGui extends AbstractGui {
                         new TierMenuGui(player1).open(player1);
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-challenges")) {
-
+                        new ChallengeMenuGui(player1).open(player1);
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".exit-button")) {
                         player1.closeInventory();
@@ -51,7 +53,7 @@ public class MainMenuGui extends AbstractGui {
         ibu.replaceLorePlaceholder("{player}", player.getName());
         ibu.replaceLorePlaceholder("{experience-name}", config.getString("experience-name"));
         ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
-        ibu.replaceLorePlaceholder("{exp}", String.valueOf(PlayerExperienceManager.getExperience(player)));
+        ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
         //Check to see if the item has status lore
         if (config.getBoolean("main-menu." + i + ".status.add-lore")) {
             if (player.hasPermission(config.getString("main-menu." + i + ".status.node-required"))) {
@@ -59,13 +61,13 @@ public class MainMenuGui extends AbstractGui {
                 ibu.replaceLorePlaceholder("{player}", player.getName());
                 ibu.replaceLorePlaceholder("{experience-name}", config.getString("experience-name"));
                 ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
-                ibu.replaceLorePlaceholder("{exp}", String.valueOf(PlayerExperienceManager.getExperience(player)));
+                ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
             } else {
                 ibu.addLore(config.getStringList("main-menu." + i + ".status.locked-lore"));
                 ibu.replaceLorePlaceholder("{player}", player.getName());
                 ibu.replaceLorePlaceholder("{experience-name}", config.getString("experience-name"));
                 ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
-                ibu.replaceLorePlaceholder("{exp}", String.valueOf(PlayerExperienceManager.getExperience(player)));
+                ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
             }
         }
         //Add item enchantments
