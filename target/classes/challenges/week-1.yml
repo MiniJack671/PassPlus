@@ -1,14 +1,12 @@
-unlock-timer: 0
-
 status:
   complete: '&2&l*&f&l*&2&l* &a&lCOMPLETED &2&l*&f&l*&2&l*'
-  locked: '&4&l*&f&l*&4&l* &c&lLOCKED &4&l*&f&l*&4&l*'
+  active: '&6&l*&f&l*&6&l* &e&lACTIVE &6&l*&f&l*&6&l*'
 
 gui:
   size: 18
   name: '&e&l** &6Week #1 Challenges &e&l**'
   1:
-    challenge: 1
+    challenge-id: 'week_1-challenge_1'
     slot: 0
     material: 'diamond_sword'
     data-value: 0
@@ -27,6 +25,25 @@ gui:
     item-flags:
       - 'hide_enchants'
   2:
+    challenge-id: 'week_1-challenge_2'
+    slot: 1
+    material: 'dirt'
+    data-value: 0
+    name: '&b&lDirt Miner I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eMine 100 Dirt'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.1 {experience-name} &7per &eblock mined'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  3:
     slot: 13
     material: 'barrier'
     data-value: 0
@@ -42,13 +59,28 @@ gui:
 # Types: pvp, slay-mob, mine, eat, chat, fish,
 challenges:
   1:
-    name: 'player_kills'
+    type: 'player_kills'
     challenge-id: 'week_1-challenge_1'
-    event: 'EntityDamageByEntityEvent'
+    active:
+      element: 'debug'
+      data-value: '0'
     completion-requirements:
       total: 10
       experience-per: 2.45
   2:
+    type: 'player_mine'
+    challenge-id: 'week_1-challenge_2'
+    active:
+      element: 'dirt'
+      data-value: '0'
+    completion-requirements:
+      total: 100
+      experience-per: 0.1
+
+
+
+temp:
+  12:
     name: 'player_deaths'
     challenge-id: 'week_1-challenge_2'
     event: 'PlayerDeathEvent'

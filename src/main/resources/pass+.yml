@@ -15,6 +15,15 @@ experience-name: 'Enigma'
 # If the welcome message should be sent to the player
 enable-welcome-message: true
 
+#
+challenge-countdown-enabled: true
+
+#
+weekly-challenge-unlock-broadcast:
+  enabled: true
+  message:
+    - '&a&lPass+&2: &7Challenges for week &e{week} &7are now available! &f/bp&7.'
+
 main-menu:
   size: 18
   name: '&a&lPass+'

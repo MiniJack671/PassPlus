@@ -25,14 +25,10 @@ public class ChallengeMenuGui extends AbstractGui {
             try {
                 int id = i;
                 setItemInSlot(FileManager.get("challenge_config").getInt("challenge-menu-gui." + i + ".slot"), buildItem(i, player), player1 -> {
-                    if (FileManager.get("challenge_config").getBoolean("challenge-menu-gui." + id + ".open-week-1")) {
-                        new WeeklyChallengeGui("1", player1).open(player1);
-                    }
-                    if (FileManager.get("challenge_config").getBoolean("challenge-menu-gui." + id + ".open-week-2")) {
-                        new WeeklyChallengeGui("2", player1).open(player1);
-                    }
-                    if (FileManager.get("challenge_config").getBoolean("challenge-menu-gui." + id + ".open-week-3")) {
-                        new WeeklyChallengeGui("3", player1).open(player1);
+                    if (FileManager.get("challenge_config").getBoolean("challenge-menu-gui." + id + ".open.enabled")) {
+                        if (FileManager.get("unlock_timers").getInt("timers.week-" + FileManager.get("challenge_config").getString("challenge-menu-gui." + id + ".week")) <= 0) {
+                            new WeeklyChallengeGui(FileManager.get("challenge_config").getString("challenge-menu-gui." + id + ".open.week"), player1).open(player1);
+                        }
                     }
                     if (FileManager.get("challenge_config").getBoolean("challenge-menu-gui." + id + ".exit-button")) {
                         new MainMenuGui(player1).open(player1);
@@ -57,7 +53,7 @@ public class ChallengeMenuGui extends AbstractGui {
         ibu.replaceLorePlaceholder("{experience-name}", FileManager.get("config").getString("experience-name"));
         ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
         ibu.replaceLorePlaceholder("{status}", getStatus(i));
-        TimeUtil tu = new TimeUtil(FileManager.get("challenges_week_" + FileManager.get("challenge_config").getString("challenge-menu-gui." + i + ".week")).getInt("unlock-timer"));
+        TimeUtil tu = new TimeUtil(FileManager.get("unlock_timers").getInt("timers.week-" + FileManager.get("challenge_config").getString("challenge-menu-gui." + i + ".week")));
         ibu.replaceLorePlaceholder("{days}", tu.getDays());
         ibu.replaceLorePlaceholder("{hours}", tu.getHours());
         ibu.replaceLorePlaceholder("{minutes}", tu.getMinutes());
@@ -70,10 +66,14 @@ public class ChallengeMenuGui extends AbstractGui {
     }
 
     public String getStatus(int week) {
-        if (FileManager.get("challenges_week_" + week).getInt("unlock-timer") <= 0) {
-            return ColorUtil.colorize(FileManager.get("challenge_config").getString("status.unlocked"));
-        } else {
-            return ColorUtil.colorize(FileManager.get("challenge_config").getString("status.locked"));
+        try {
+            if (FileManager.get("unlock_timers").getInt("timers.week-" + week) <= 0) {
+                return ColorUtil.colorize(FileManager.get("challenge_config").getString("status.unlocked"));
+            } else {
+                return ColorUtil.colorize(FileManager.get("challenge_config").getString("status.locked"));
+            }
+        } catch (Exception e) {
+            return "debug";
         }
     }
 }

@@ -1,6 +1,9 @@
 package dev.nuer.pp.playerData.utils;
 
 import dev.nuer.pp.PassPlus;
+import dev.nuer.pp.challenges.Challenge;
+import dev.nuer.pp.challenges.ChallengeWeek;
+import dev.nuer.pp.enable.WeeklyChallengeManager;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -29,6 +32,7 @@ public class PlayerFileUtil {
         if (!file.exists()) {
             setupPlayerFileDefaults(config);
         }
+        setupChallengeWeeks();
         save();
     }
 
@@ -39,10 +43,20 @@ public class PlayerFileUtil {
         config.set("pass-info.experience", 0.0);
         //Set defaults for the information about the players current & completed challenges
         config.createSection("pass-challenges");
-        config.set("pass-challenges.active", "[ ]");
-        config.set("pass-challenges.complete", "[ ]");
         //Send a nice message
         PassPlus.log.info("Successfully created a new player-data file: " + fileName + ", all defaults have been created.");
+    }
+
+    private void setupChallengeWeeks() {
+        for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
+            if (!challengeWeek.isLocked()) {
+                for (Challenge challenge : challengeWeek.challenges) {
+                    if (config.get("pass-challenges.week-" + challengeWeek.getWeek() + "." + challenge.getId()) == null) {
+                        config.set("pass-challenges.week-" + challengeWeek.getWeek() + "." + challenge.getId(), 0.0);
+                    }
+                }
+            }
+        }
     }
 
     public void save() {

@@ -1,9 +1,7 @@
-dev\nuer\pp\playerData\PlayerDataManager.class
-dev\nuer\pp\utils\ColorUtil.class
-dev\nuer\pp\playerData\utils\PlayerFileUtil.class
-dev\nuer\pp\PassPlus.class
-dev\nuer\pp\managers\SetupManager.class
-dev\nuer\pp\utils\YamlFileUtil.class
-dev\nuer\pp\playerData\listeners\DataCreationOnJoin.class
-dev\nuer\pp\managers\FileManager.class
 dev\nuer\pp\utils\MessageUtil.class
+dev\nuer\pp\playerData\listeners\DataCreationOnJoin.class
+dev\nuer\pp\PassPlus.class
+dev\nuer\pp\playerData\PlayerDataManager.class
+dev\nuer\pp\playerData\utils\PlayerFileUtil.class
+dev\nuer\pp\utils\ColorUtil.class
+dev\nuer\pp\utils\YamlFileUtil.class

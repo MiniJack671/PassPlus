@@ -1,5 +1,7 @@
 package dev.nuer.pp.enable;
 
+import dev.nuer.pp.challenges.listeners.ChallengeWeekUnlockListener;
+import dev.nuer.pp.challenges.listeners.PlayerChallengeCompletedListener;
 import dev.nuer.pp.experience.listeners.ExperienceTierListener;
 import dev.nuer.pp.gui.listener.GuiClickListener;
 import dev.nuer.pp.playerData.listeners.DataCreationOnJoin;
@@ -25,10 +27,9 @@ public class SetupManager {
         fileManager.add("tier_config", "tiers" + File.separator + "tier-config.yml");
         fileManager.add("tier_gui", "tiers" + File.separator + "tier-gui.yml");
         fileManager.add("challenge_config", "challenges" + File.separator + "challenge-config.yml");
+        fileManager.add("unlock_timers", "challenges" + File.separator + "unlock-timers.yml");
         //Load the week configuration for the challenges.
-        for (int i = 1; i <= FileManager.get("challenge_config").getInt("number-of-weeks"); i++) {
-            fileManager.add("challenges_week_" + i, "challenges" + File.separator + "week-" + i + ".yml");
-        }
+        WeeklyChallengeManager.load(fileManager);
     }
 
     /**
@@ -42,5 +43,7 @@ public class SetupManager {
         pm.registerEvents(new PlayerTierListener(), instance);
         pm.registerEvents(new GuiClickListener(), instance);
         pm.registerEvents(new ExperienceTierListener(), instance);
+        pm.registerEvents(new ChallengeWeekUnlockListener(), instance);
+        pm.registerEvents(new PlayerChallengeCompletedListener(), instance);
     }
 }
