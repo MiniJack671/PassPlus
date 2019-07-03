@@ -9,6 +9,20 @@ enable-welcome-message: true
 # If the challenges for each week should countdown
 challenge-countdown-enabled: true
 
+# give notification (for the receiver)
+give-notification:
+  message:
+    enabled: true
+    text:
+      - '&a&lPass+&2: &7Thank you for purchasing your copy of &aPass+&7.'
+  sound:
+    enabled: true
+    type: 'level_up'
+    volume: 1
+    pitch: 2
+  firework:
+    enabled: true
+
 # This message is broadcast when challenges for that week are no longer locked
 weekly-challenge-unlock-broadcast:
   enabled: true
@@ -35,7 +49,7 @@ main-menu:
       - '&7 '
       - '&7&o((left-click to view the full tier list for &f[server]&7&o))'
       - '&7 '
-      - '&7Interesting in embarking on the &aPass+ &7journey?'
+      - '&7Interested in embarking on the &aPass+ &7journey?'
       - '&7Purchase your copy from &f&nshop.example.com&7 for &c&l$-.00'
     enchantments:
       - 'lure:1'
@@ -46,7 +60,6 @@ main-menu:
     slot: 4
     status:
       add-lore: true
-      node-required: 'pass+.pass'
       locked-lore:
         - '&7You &c&ndo not&7 have a copy of &aPass+&7.'
         - '&7 '
@@ -77,7 +90,12 @@ main-menu:
     data-value: 0
     name: '&e&lChallenges'
     lore:
-      - '&7Temp'
+      - '&7 '
+      - '&eChallenges are the key to getting {experience-name}.'
+      - '&eA brand new set of challenges will unlock each week,'
+      - '&eproviding you with a new source of {experience-name}.'
+      - '&7 '
+      - '&7&o((left-click to view the challenge list for &f[server]&7&o))'
     enchantments:
       - 'lure:1'
     item-flags:

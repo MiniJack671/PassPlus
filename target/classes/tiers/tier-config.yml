@@ -1,5 +1,14 @@
 max-tier: 25
 
+tier-up-notification:
+  sound:
+    enabled: true
+    type: 'level_up'
+    volume: 1
+    pitch: 2
+  firework:
+    enabled: true
+
 1:
   # -- This message(s) and command(s) will be run when the player reaches this tier
   rewards:
@@ -10,7 +19,7 @@ max-tier: 25
       - 'eco give {player} 25000'
 #
 2:
-  experience-to-level: 25.80
+  experience-to-level: 5.00
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e2&7.'
@@ -20,10 +29,28 @@ max-tier: 25
       - 'eco give {player} 25000'
 #
 3:
-  experience-to-level: 42.89
+  experience-to-level: 10.00
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e3&7.'
       - '&7&o((Tier &e3 &7&orewards have been given to you.))'
     commands:
       - 't+ give {player} trench diamond_pickaxe:0 3 15000'
+#
+4:
+  experience-to-level: 15.00
+  rewards:
+    message:
+      - '&a&lPass+&2: &7Congratulations you are now tier &e4&7.'
+      - '&7&o((Tier &e3 &7&orewards have been given to you.))'
+    commands:
+      - 't+ give {player} harvester diamond_hoe:0 1 5 15000'
+#
+5:
+  experience-to-level: 20.00
+  rewards:
+    message:
+      - '&a&lPass+&2: &7Congratulations you are now tier &e5&7.'
+      - '&7&o((Tier &e3 &7&orewards have been given to you.))'
+    commands:
+      - 't+ give {player} chunk feather:0 1 2 10'

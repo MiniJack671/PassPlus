@@ -31,7 +31,7 @@ public class PassAdminCmd implements CommandExecutor {
                 if (!sender.hasPermission("pass+.admin-cmd.reload")) {
                     if (sender instanceof Player) {
                         MessageUtil.message("messages", "permission-debug", (Player) sender,
-                                "{node}", "pass+.admin-cmd.give");
+                                "{node}", "pass+.admin-cmd.reload");
                     }
                     return true;
                 }

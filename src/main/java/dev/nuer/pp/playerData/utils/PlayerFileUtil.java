@@ -39,6 +39,7 @@ public class PlayerFileUtil {
     private void setupPlayerFileDefaults(YamlConfiguration config) {
         //Set defaults for the information about the players tiers and currency
         config.createSection("pass-info");
+        config.set("pass-info.valid-copy", false);
         config.set("pass-info.tier", 0);
         config.set("pass-info.experience", 0.0);
         //Set defaults for the information about the players current & completed challenges
@@ -49,7 +50,7 @@ public class PlayerFileUtil {
 
     private void setupChallengeWeeks() {
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
-            if (!challengeWeek.isLocked()) {
+            if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (config.get("pass-challenges.week-" + challengeWeek.getWeek() + "." + challenge.getId()) == null) {
                         config.set("pass-challenges.week-" + challengeWeek.getWeek() + "." + challenge.getId(), 0.0);

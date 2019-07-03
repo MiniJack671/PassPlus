@@ -10,11 +10,13 @@ public class PlayerExperienceGainEvent extends Event implements Cancellable {
 
     private Player player;
     private double experienceGained;
+    private double totalExperience;
     private boolean cancel;
 
-    public PlayerExperienceGainEvent(Player player, double experienceGained) {
+    public PlayerExperienceGainEvent(Player player, double experienceGained, double totalExperience) {
         this.player = player;
         this.experienceGained = experienceGained;
+        this.totalExperience = totalExperience;
     }
 
     public static HandlerList getHandlerList() {
@@ -27,6 +29,10 @@ public class PlayerExperienceGainEvent extends Event implements Cancellable {
 
     public double getExperienceGained() {
         return experienceGained;
+    }
+
+    public double getTotalExperience() {
+        return totalExperience;
     }
 
     @Override

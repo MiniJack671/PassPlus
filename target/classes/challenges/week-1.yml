@@ -30,7 +30,7 @@ gui:
   2:
     challenge-id: 'week_1-challenge_2'
     slot: 1
-    material: 'dirt'
+    material: 'iron_spade'
     data-value: 0
     name: '&b&lDirt Miner I'
     lore:
@@ -51,9 +51,9 @@ gui:
       - 'hide_enchants'
   3:
     challenge-id: 'week_1-challenge_3'
-    slot: 1
-    material: 'stone'
-    data-value: 2
+    slot: 2
+    material: 'iron_helmet'
+    data-value: 0
     name: '&b&lBlock Placer I'
     lore:
       - '&7 '
@@ -73,7 +73,7 @@ gui:
       - 'hide_enchants'
   4:
     challenge-id: 'week_1-challenge_4'
-    slot: 1
+    slot: 3
     material: 'feather'
     data-value: 0
     name: '&b&lDeaths I'
@@ -95,8 +95,8 @@ gui:
       - 'hide_enchants'
   5:
     challenge-id: 'week_1-challenge_5'
-    slot: 1
-    material: 'dirt'
+    slot: 4
+    material: 'blaze_rod'
     data-value: 0
     name: '&b&lBlaze Killer I'
     lore:
@@ -105,7 +105,73 @@ gui:
       - ' &f&l* &eKill 5,850 Blaze'
       - '&7 '
       - '&7Rewards:'
-      - ' &f&l* &e0.0032 {experience-name} &7per &eblock mined'
+      - ' &f&l* &e0.0032 {experience-name} &7per &eblaze killed'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  6:
+    challenge-id: 'week_1-challenge_6'
+    slot: 5
+    material: 'paper'
+    data-value: 0
+    name: '&b&lActive Chatter I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eSend 200 chat messages'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.0125 {experience-name} &7per &echat'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  7:
+    challenge-id: 'week_1-challenge_7'
+    slot: 6
+    material: 'raw_fish'
+    data-value: 3
+    name: '&b&lFishery I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eCatch 50 items'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.15 {experience-name} &7per &eitem caught'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  8:
+    challenge-id: 'week_1-challenge_8'
+    slot: 7
+    material: 'cooked_beef'
+    data-value: 0
+    name: '&b&lConsumer I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eEat 500 Steak'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.01 {experience-name} &7per &esteak eaten'
       - '&7 '
       - '&7Progress:'
       - ' &f&l* {progress-bar}'
@@ -135,7 +201,7 @@ challenges:
     challenge-id: 'week_1-challenge_1'
     active:
       element: ''
-      data-value: '0'
+      data-value: '-1'
     completion-requirements:
       total: 13.4 # kill 10 players
       experience-per: 1.34
@@ -152,7 +218,7 @@ challenges:
     type: 'player_place'
     challenge-id: 'week_1-challenge_3'
     active:
-      element: 'all'
+      element: ''
       data-value: '-1'
     completion-requirements:
       total: 15 # place 2.5k blocks
@@ -162,7 +228,7 @@ challenges:
     challenge-id: 'week_1-challenge_4'
     active:
       element: ''
-      data-value: '0'
+      data-value: '-1'
     completion-requirements:
       total: 3.4 # die 100 times
       experience-per: 0.034
@@ -180,18 +246,18 @@ challenges:
     challenge-id: 'week_1-challenge_6'
     active:
       element: ''
-      data-value: '0'
+      data-value: '-1'
     completion-requirements:
-      total: 2.5
+      total: 2.5 # chat 200 times
       experience-per: 0.0125
   7:
     type: 'player_fish'
     challenge-id: 'week_1-challenge_7'
     active:
-      element: 'pufferfish'
-      data-value: '0'
+      element: ''
+      data-value: '-1'
     completion-requirements:
-      total: 7.5
+      total: 7.5 # catch 50 items
       experience-per: 0.15
   8:
     type: 'player_consume'
@@ -200,17 +266,5 @@ challenges:
       element: 'cooked_beef'
       data-value: '0'
     completion-requirements:
-      total: 5
+      total: 5 # eat 500 beef
       experience-per: 0.01
-
-
-
-temp:
-  6:
-    completion-requirement:
-      type: 'consume'
-      method: 'potion'
-      potion-type: 'speed'
-      potion-level: 2
-      total: 25
-    experience-per-objective: 0.25

@@ -1,14 +1,10 @@
 package dev.nuer.pp.challenges.listeners;
 
-import dev.nuer.pp.challenges.Challenge;
-import dev.nuer.pp.challenges.ChallengeWeek;
-import dev.nuer.pp.enable.WeeklyChallengeManager;
 import dev.nuer.pp.challenges.events.ChallengeWeekUnlockEvent;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.utils.BroadcastUtil;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBreakEvent;
 
 public class ChallengeWeekUnlockListener implements Listener {
 

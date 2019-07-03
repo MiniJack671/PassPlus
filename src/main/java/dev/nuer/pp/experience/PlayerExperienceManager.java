@@ -17,20 +17,18 @@ public class PlayerExperienceManager {
     }
 
     public static void setExperience(Player player, double experience) {
+        //If increase then fire the event
+        if (experience > getExperience(player)) {
+            Bukkit.getPluginManager().callEvent(new PlayerExperienceGainEvent(player, experience - getExperience(player), experience));
+        }
+        //Set the new experience
         PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
-        //Store if the exp is increased
-        boolean increase = experience > getExperience(player);
         //Save the players data
         pfu.get().set("pass-info.experience", experience);
         pfu.save();
-        //If increase then fire the event
-        if (increase) {
-            Bukkit.getPluginManager().callEvent(new PlayerExperienceGainEvent(player, experience - getExperience(player)));
-        }
     }
 
     public static double getExperience(Player player) {
-        PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
-        return pfu.get().getDouble("pass-info.experience");
+        return PlayerDataManager.getPlayerFile(player).get().getDouble("pass-info.experience");
     }
 }

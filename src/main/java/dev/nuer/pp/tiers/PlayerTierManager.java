@@ -28,7 +28,6 @@ public class PlayerTierManager {
     }
 
     public static void setTier(Player player, int tier) throws ExceedMaxPlayerTierException, BelowMinimumPlayerTierException {
-        PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
         //Check to make sure the desired tier is not going to exceed the max tier
         if (tier > FileManager.get("tier_config").getInt("max-tier"))
             throw new ExceedMaxPlayerTierException();
@@ -39,13 +38,13 @@ public class PlayerTierManager {
                 Bukkit.getPluginManager().callEvent(new PlayerTierUpEvent(player, tier));
             }
         }
+        PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
         //If not, then set the players tier
         pfu.get().set("pass-info.tier", tier);
         pfu.save();
     }
 
     public static int getTier(Player player) {
-        PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
-        return pfu.get().getInt("pass-info.tier");
+        return PlayerDataManager.getPlayerFile(player).get().getInt("pass-info.tier");
     }
 }

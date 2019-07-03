@@ -4,6 +4,19 @@ status:
   unlocked: '&2&l*&f&l*&2&l* &a&lUNLOCKED &2&l*&f&l*&2&l*'
   locked: '&4&l*&f&l*&4&l* &c&lLOCKED &4&l*&f&l*&4&l*'
 
+completion-notification:
+  message:
+    enabled: true
+    text:
+      - '&a&lPass+&2: &7You just completed &e{challenge-id}&7, all &e{experience-name} &7has been added to your account.'
+  sound:
+    enabled: true
+    type: 'level_up'
+    volume: 1
+    pitch: 2
+  firework:
+    enabled: true
+
 challenge-menu-gui:
   size: 18
   name: '&e&lChallenges'

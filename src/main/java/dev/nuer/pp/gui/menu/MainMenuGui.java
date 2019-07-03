@@ -6,6 +6,7 @@ import dev.nuer.pp.experience.PlayerExperienceManager;
 import dev.nuer.pp.gui.AbstractGui;
 import dev.nuer.pp.gui.challenge.ChallengeMenuGui;
 import dev.nuer.pp.gui.tier.TierMenuGui;
+import dev.nuer.pp.playerData.PlayerDataManager;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
 import dev.nuer.pp.utils.ItemBuilderUtil;
@@ -27,7 +28,7 @@ public class MainMenuGui extends AbstractGui {
                 int id = i;
                 setItemInSlot(FileManager.get("config").getInt("main-menu." + i + ".slot"), buildItem(i, player), player1 -> {
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-tiers")) {
-                        if (player1.hasPermission("pass+.pass")) {
+                        if (PlayerDataManager.hasCopy(player1)) {
                             new TierMenuGui(player1).open(player1);
                         } else {
                             MessageUtil.message("messages", "invalid-pass", player1);
@@ -35,7 +36,7 @@ public class MainMenuGui extends AbstractGui {
                         }
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-challenges")) {
-                        if (player1.hasPermission("pass+.pass")) {
+                        if (PlayerDataManager.hasCopy(player1)) {
                             new ChallengeMenuGui(player1).open(player1);
                         } else {
                             MessageUtil.message("messages", "invalid-pass", player1);
@@ -67,7 +68,7 @@ public class MainMenuGui extends AbstractGui {
         ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
         //Check to see if the item has status lore
         if (config.getBoolean("main-menu." + i + ".status.add-lore")) {
-            if (player.hasPermission(config.getString("main-menu." + i + ".status.node-required"))) {
+            if (PlayerDataManager.hasCopy(player)) {
                 ibu.addLore(config.getStringList("main-menu." + i + ".status.unlocked-lore"));
                 ibu.replaceLorePlaceholder("{player}", player.getName());
                 ibu.replaceLorePlaceholder("{experience-name}", config.getString("experience-name"));

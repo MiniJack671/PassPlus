@@ -20,9 +20,6 @@ command-debug:
   - '&cError! &7There was a problem with the command you entered, please read the reason.'
   - '&6Reason: &e{reason}&7.'
 
-challenge-completion:
-  - '&a&lPass+&2: &7You just completed &e{challenge-id}&7, all &e{experience-name} &7has been added to your account.'
-
 invalid-pass:
   - '&a&lPass+&2: &7You cannot view that because you do not have a copy of &aPass+&7.'
 

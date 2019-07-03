@@ -23,6 +23,13 @@ public class PassCmd implements CommandExecutor {
                     PassPlus.log.info("Only players can view their current tier.");
                 }
             }
+            if (args[0].equalsIgnoreCase("e") || args[0].equalsIgnoreCase("exp")) {
+                if (sender instanceof Player) {
+
+                } else {
+                    PassPlus.log.info("Only players can view their current experience.");
+                }
+            }
         }
         return true;
     }

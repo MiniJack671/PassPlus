@@ -34,10 +34,10 @@ tier-gui:
     lore:
       - '&7 '
       - '&7Requirement(s):'
-      - ' &f&l* &e25.80 {experience-name}'
+      - ' &f&l* &e5.00 {experience-name}'
       - '&7 '
       - '&7Progress:'
-      - ' &f&l* &e{exp}&7/&e25.80'
+      - ' &f&l* &e{exp}&7/&e5.00'
       - '&7 '
       - '&7Rewards:'
       - ' &f&l* &eTier I Sell Wand &7(&650 Uses&7).'
@@ -57,10 +57,10 @@ tier-gui:
     lore:
       - '&7 '
       - '&7Requirement(s):'
-      - ' &f&l* &e42.89 {experience-name}'
+      - ' &f&l* &e10.00 {experience-name}'
       - '&7 '
       - '&7Progress:'
-      - ' &f&l* &e{exp}&7/&e42.89'
+      - ' &f&l* &e{exp}&7/&e10.00'
       - '&7 '
       - '&7Rewards:'
       - ' &f&l* &e7x7 Trench Pickaxe &7(&615,000 Uses&7).'
@@ -71,6 +71,50 @@ tier-gui:
     item-flags:
       - 'hide_enchants'
   4:
+    tier: 4
+    slot: 3
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 4'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e15.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e15.00'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &eTier III Harvester Hoe &7(&615,000 Uses&7).'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  5:
+    tier: 5
+    slot: 4
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 5'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e20.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e20.00'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e3x3 Chunk Wand &7(&610 Uses&7).'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  6:
     slot: 49
     material: 'barrier'
     data-value: 0
