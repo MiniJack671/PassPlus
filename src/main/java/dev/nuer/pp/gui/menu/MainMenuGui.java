@@ -9,6 +9,7 @@ import dev.nuer.pp.gui.tier.TierMenuGui;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
 import dev.nuer.pp.utils.ItemBuilderUtil;
+import dev.nuer.pp.utils.MessageUtil;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -26,10 +27,20 @@ public class MainMenuGui extends AbstractGui {
                 int id = i;
                 setItemInSlot(FileManager.get("config").getInt("main-menu." + i + ".slot"), buildItem(i, player), player1 -> {
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-tiers")) {
-                        new TierMenuGui(player1).open(player1);
+                        if (player1.hasPermission("pass+.pass")) {
+                            new TierMenuGui(player1).open(player1);
+                        } else {
+                            MessageUtil.message("messages", "invalid-pass", player1);
+                            player1.closeInventory();
+                        }
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-challenges")) {
-                        new ChallengeMenuGui(player1).open(player1);
+                        if (player1.hasPermission("pass+.pass")) {
+                            new ChallengeMenuGui(player1).open(player1);
+                        } else {
+                            MessageUtil.message("messages", "invalid-pass", player1);
+                            player1.closeInventory();
+                        }
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".exit-button")) {
                         player1.closeInventory();

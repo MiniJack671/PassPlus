@@ -18,11 +18,13 @@ public class PlayerExperienceManager {
 
     public static void setExperience(Player player, double experience) {
         PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
-        //If not, then set the players tier
+        //Store if the exp is increased
+        boolean increase = experience > getExperience(player);
+        //Save the players data
         pfu.get().set("pass-info.experience", experience);
         pfu.save();
-        //Then check if they should tier up
-        if (experience > getExperience(player)) {
+        //If increase then fire the event
+        if (increase) {
             Bukkit.getPluginManager().callEvent(new PlayerExperienceGainEvent(player, experience - getExperience(player)));
         }
     }

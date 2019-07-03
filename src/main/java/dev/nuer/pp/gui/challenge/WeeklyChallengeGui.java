@@ -6,6 +6,7 @@ import dev.nuer.pp.gui.AbstractGui;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
 import dev.nuer.pp.utils.ItemBuilderUtil;
+import dev.nuer.pp.utils.ProgressBarUtil;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -42,6 +43,13 @@ public class WeeklyChallengeGui extends AbstractGui {
         ibu.replaceLorePlaceholder("{experience-name}", FileManager.get("config").getString("experience-name"));
         ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
         ibu.replaceLorePlaceholder("{status}", getStatus(i, player, config, week));
+        try {
+            ibu.replaceLorePlaceholder("{progress-bar}",
+                    ProgressBarUtil.bar(WeeklyChallengeManager.getChallenge(config.getString("gui." + i + ".challenge-id")).getProgress(player),
+                            WeeklyChallengeManager.getChallenge(config.getString("gui." + i + ".challenge-id")).getTotal()));
+        } catch (Exception e) {
+            ibu.replaceLorePlaceholder("{progress-bar}", "debug");
+        }
         //Add item enchantments
         ibu.addEnchantments(config.getStringList("gui." + i + ".enchantments"));
         //Add item flags

@@ -20,6 +20,12 @@ command-debug:
   - '&cError! &7There was a problem with the command you entered, please read the reason.'
   - '&6Reason: &e{reason}&7.'
 
+challenge-completion:
+  - '&a&lPass+&2: &7You just completed &e{challenge-id}&7, all &e{experience-name} &7has been added to your account.'
+
+invalid-pass:
+  - '&a&lPass+&2: &7You cannot view that because you do not have a copy of &aPass+&7.'
+
 # -- Admin command messages --
 admin-cmd-help:
   - '&a&lPass+&2&lAdmin&e: &7Check the GitHub for a detailed command list: &f&n[link]'
@@ -29,6 +35,9 @@ admin-cmd-tier-manipulation:
 
 admin-cmd-experience-manipulation:
   - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7now has &e{exp} {experience-name}&7.'
+
+admin-cmd-reload:
+  - '&a&lPass+&2&lAdmin&e: &7Action successful, all configuration files have been reloaded.'
 
 give-success:
   - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7has received a copy of &aPass+&7.'

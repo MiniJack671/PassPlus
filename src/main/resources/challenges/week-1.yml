@@ -17,7 +17,10 @@ gui:
       - ' &f&l* &e10 Player Kills'
       - '&7 '
       - '&7Rewards:'
-      - ' &f&l* &e3.42 {experience-name} &7per &eKill'
+      - ' &f&l* &e1.34 {experience-name} &7per &ekill'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
       - '&7 '
       - '{status}'
     enchantments:
@@ -38,12 +41,81 @@ gui:
       - '&7Rewards:'
       - ' &f&l* &e0.1 {experience-name} &7per &eblock mined'
       - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
       - '{status}'
     enchantments:
       - 'lure:1'
     item-flags:
       - 'hide_enchants'
   3:
+    challenge-id: 'week_1-challenge_3'
+    slot: 2
+    material: 'stone'
+    data-value: 2
+    name: '&b&lBlock Placer I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &ePlace 2.5K Blocks'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.006 {experience-name} &7per &eblock placed'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  4:
+    challenge-id: 'week_1-challenge_4'
+    slot: 3
+    material: 'feather'
+    data-value: 0
+    name: '&b&lDeaths I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eDie 100 Times'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.034 {experience-name} &7per &edeath'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  5:
+    challenge-id: 'week_1-challenge_5'
+    slot: 4
+    material: 'dirt'
+    data-value: 0
+    name: '&b&lBlaze Killer I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eKill 5,850 Blaze'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.0032 {experience-name} &7per &eblaze killed'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  9:
     slot: 13
     material: 'barrier'
     data-value: 0
@@ -62,11 +134,11 @@ challenges:
     type: 'player_kills'
     challenge-id: 'week_1-challenge_1'
     active:
-      element: 'debug'
+      element: ''
       data-value: '0'
     completion-requirements:
-      total: 10
-      experience-per: 2.45
+      total: 13.4 # kill 10 players
+      experience-per: 1.34
   2:
     type: 'player_mine'
     challenge-id: 'week_1-challenge_2'
@@ -74,42 +146,66 @@ challenges:
       element: 'dirt'
       data-value: '0'
     completion-requirements:
-      total: 100
+      total: 10 # mine 100 dirt blocks
       experience-per: 0.1
+  3:
+    type: 'player_place'
+    challenge-id: 'week_1-challenge_3'
+    active:
+      element: 'all'
+      data-value: '-1'
+    completion-requirements:
+      total: 15 # place 2.5k blocks
+      experience-per: 0.006
+  4:
+    type: 'player_deaths'
+    challenge-id: 'week_1-challenge_4'
+    active:
+      element: ''
+      data-value: '0'
+    completion-requirements:
+      total: 3.4 # die 100 times
+      experience-per: 0.034
+  5:
+    type: 'player_kill_mob'
+    challenge-id: 'week_1-challenge_5'
+    active:
+      element: 'blaze'
+      data-value: '0'
+    completion-requirements:
+      total: 18.72 # kill 5850 blaze
+      experience-per: 0.0032
+  6:
+    type: 'player_chat'
+    challenge-id: 'week_1-challenge_6'
+    active:
+      element: ''
+      data-value: '0'
+    completion-requirements:
+      total: 2.5
+      experience-per: 0.0125
+  7:
+    type: 'player_fish'
+    challenge-id: 'week_1-challenge_7'
+    active:
+      element: 'pufferfish'
+      data-value: '0'
+    completion-requirements:
+      total: 7.5
+      experience-per: 0.15
+  8:
+    type: 'player_consume'
+    challenge-id: 'week_1-challenge_8'
+    active:
+      element: 'cooked_beef'
+      data-value: '0'
+    completion-requirements:
+      total: 5
+      experience-per: 0.01
 
 
 
 temp:
-  12:
-    name: 'player_deaths'
-    challenge-id: 'week_1-challenge_2'
-    event: 'PlayerDeathEvent'
-    completion-requirements:
-      total: 100
-      experience-per: 0.045
-  3:
-    completion-requirement:
-      type: 'slay-mob'
-      method: 'kills'
-      mob-type: 'zombie'
-      total: 1000
-    experience-per-objective: 0.01
-  4:
-    completion-requirement:
-      type: 'mining'
-      method: 'mine'
-      block: 'stone'
-      data-value: 0
-      total: 15000
-    experience-per-objective: 0.003
-  5:
-    completion-requirement:
-      type: 'consume'
-      method: 'food'
-      food-type: 'golden_apple'
-      data-value: 0
-      total: 10
-    experience-per-objective: 1.75
   6:
     completion-requirement:
       type: 'consume'
@@ -118,16 +214,3 @@ temp:
       potion-level: 2
       total: 25
     experience-per-objective: 0.25
-  7:
-    completion-requirement:
-      type: 'chat'
-      method: 'send'
-      total: 250
-    experience-per-objective: 0.076
-  8:
-    completion-requirement:
-      type: 'fish'
-      method: 'catch'
-      fish-type: 'pufferfish'
-      total: 35
-    experience-per-objective: 0.35

@@ -3,6 +3,7 @@ package dev.nuer.pp.cmd;
 import dev.nuer.pp.PassPlus;
 import dev.nuer.pp.cmd.adminSub.ExperienceCmd;
 import dev.nuer.pp.cmd.adminSub.GiveCmd;
+import dev.nuer.pp.cmd.adminSub.ReloadCmd;
 import dev.nuer.pp.cmd.adminSub.TierCmd;
 import dev.nuer.pp.utils.MessageUtil;
 import org.bukkit.command.Command;
@@ -24,6 +25,17 @@ public class PassAdminCmd implements CommandExecutor {
                 if (sender instanceof Player) {
                     MessageUtil.message("messages", "permission-debug", (Player) sender, "{node}", "pass+.admin-cmd.help");
                 }
+            }
+        }else if (args.length == 1) {
+            if (args[0].equalsIgnoreCase("r") || args[0].equalsIgnoreCase("reload")) {
+                if (!sender.hasPermission("pass+.admin-cmd.reload")) {
+                    if (sender instanceof Player) {
+                        MessageUtil.message("messages", "permission-debug", (Player) sender,
+                                "{node}", "pass+.admin-cmd.give");
+                    }
+                    return true;
+                }
+                ReloadCmd.onCmd(sender, args);
             }
         } else if (args.length == 2) {
             if (args[0].equalsIgnoreCase("g") || args[0].equalsIgnoreCase("give")) {
@@ -55,6 +67,13 @@ public class PassAdminCmd implements CommandExecutor {
                     return true;
                 }
                 ExperienceCmd.onCmd(sender, args);
+            }
+        } else {
+            if (sender instanceof Player) {
+                MessageUtil.message("messages", "command-debug", (Player) sender,
+                        "{reason}", "The command arguments are not valid, please see the GitHub page for command help");
+            } else {
+                PassPlus.log.info("The command you entered is invalid.");
             }
         }
         return true;

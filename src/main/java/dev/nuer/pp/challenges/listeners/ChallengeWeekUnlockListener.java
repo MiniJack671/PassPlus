@@ -22,21 +22,4 @@ public class ChallengeWeekUnlockListener implements Listener {
             BroadcastUtil.broadcast("weekly-challenge-unlock-broadcast.message", "{week}", event.getChallengeWeek().getWeek());
         }
     }
-
-    @EventHandler
-    public void blockBreak(BlockBreakEvent event) {
-        if (event.isCancelled()) return;
-        for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
-            if (!challengeWeek.isLocked()) {
-                for (Challenge challenge : challengeWeek.challenges) {
-                    if (!challenge.getType().equalsIgnoreCase("player_mine")) continue;
-                    if (!event.getBlock().getType().toString().equalsIgnoreCase(challenge.getElement()))
-                        continue;
-                    if (event.getBlock().getType().getMaxDurability() != challenge.getDataValue()) continue;
-                    if (challenge.getProgress(event.getPlayer()) == -1) continue;
-                    challenge.progress(event.getPlayer());
-                }
-            }
-        }
-    }
 }

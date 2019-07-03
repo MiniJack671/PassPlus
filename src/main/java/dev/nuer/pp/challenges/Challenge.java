@@ -27,12 +27,14 @@ public class Challenge {
     }
 
     public double getProgress(Player player) {
+        if (PlayerDataManager.getPlayerFile(player).get().get("pass-challenges.week-" + week + "." + challengeId) == null)
+            return 0.0;
         return PlayerDataManager.getPlayerFile(player).get().getDouble("pass-challenges.week-" + week + "." + challengeId);
     }
 
     public void progress(Player player) {
         PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);
-        if (getProgress(player) + getExpPer() >= total) {
+        if (getProgress(player) + getExpPer() >= total - 0.1) {
             Bukkit.getPluginManager().callEvent(new PlayerChallengeCompletionEvent(this, player));
         } else {
             pfu.get().set("pass-challenges.week-" + week + "." + challengeId, (getProgress(player) + getExpPer()));

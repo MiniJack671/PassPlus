@@ -1,29 +1,21 @@
 # Pass+, developed by Nuer
 # <3
-# Please specify the storage configuration for the plugin (internal or mysql)
-storage-configuration:
-  method: internal
-  # if you are using internal storage disregard the rest of this section
-  host: 'localhost'
-  port: 3306
-  database: 'john_doe'
-  password: 'Passw0rd1'
-
 # The name for the experience used throughout the plugin
 experience-name: 'Enigma'
 
 # If the welcome message should be sent to the player
 enable-welcome-message: true
 
-#
+# If the challenges for each week should countdown
 challenge-countdown-enabled: true
 
-#
+# This message is broadcast when challenges for that week are no longer locked
 weekly-challenge-unlock-broadcast:
   enabled: true
   message:
     - '&a&lPass+&2: &7Challenges for week &e{week} &7are now available! &f/bp&7.'
 
+# Main menu for the plugin, opened with /bp
 main-menu:
   size: 18
   name: '&a&lPass+'
