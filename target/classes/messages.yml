@@ -1,10 +1,18 @@
 # -- General Messages --
 player-welcome:
-  - '&7 '
-  - '&a&lPass+&2: &7Welcome &e{player}&7, here are your current battlepass stats.'
-  - '&6 - &eTier: &f{tier}'
-  - '&6 - &e{experience-name}: &f{exp}'
-  - '&7 '
+  active-copy:
+    - '&7 '
+    - '&a&lPass+&2: &7Welcome &e{player}&7, here are your current &aPass+ &7stats.'
+    - '&6 - &eTier: &f{tier}'
+    - '&6 - &e{experience-name}: &f{exp}'
+    - '&6 - &eChallenges completed: &f{challenges-completed}'
+    - '&7 '
+  no-copy:
+    - '&7 '
+    - '&a&lPass+&2: &7You do not have a copy of &aPass+&7.'
+    - '&7You are currently missing out on weekly challenges and rewards for playing!'
+    - '&7Purchase your copy of &aPass+ &7here: &f&nstore.example.com&7.'
+    - '&7 '
 
 tier-query:
   - '&a&lPass+&2: &7You are currently tier &e{tier}&7.'

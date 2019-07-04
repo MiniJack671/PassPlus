@@ -177,7 +177,7 @@ public class ChallengeListener implements Listener {
                         if (!event.getItem().getType().toString().equalsIgnoreCase(challenge.getElement()))
                             continue;
                         if (challenge.getDataValue() != -1) {
-                            if (event.getItem().getType().getMaxDurability() != challenge.getDataValue())
+                            if (event.getItem().getDurability() != challenge.getDataValue())
                                 continue;
                         }
                     }

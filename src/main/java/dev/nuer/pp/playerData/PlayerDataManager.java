@@ -17,6 +17,10 @@ public class PlayerDataManager {
         pfu.save();
     }
 
+    public static int getChallengesCompleted(Player player) {
+        return getPlayerFile(player).get().getInt("pass-info.challenges-completed");
+    }
+
     public static boolean hasCopy(Player player) {
         return getPlayerFile(player).get().getBoolean("pass-info.valid-copy");
     }

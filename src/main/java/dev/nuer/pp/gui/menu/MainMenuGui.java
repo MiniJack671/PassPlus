@@ -29,7 +29,7 @@ public class MainMenuGui extends AbstractGui {
                 setItemInSlot(FileManager.get("config").getInt("main-menu." + i + ".slot"), buildItem(i, player), player1 -> {
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-tiers")) {
                         if (PlayerDataManager.hasCopy(player1)) {
-                            new TierMenuGui(player1).open(player1);
+                            new TierMenuGui(player1, 1).open(player1);
                         } else {
                             MessageUtil.message("messages", "invalid-pass", player1);
                             player1.closeInventory();
@@ -74,12 +74,14 @@ public class MainMenuGui extends AbstractGui {
                 ibu.replaceLorePlaceholder("{experience-name}", config.getString("experience-name"));
                 ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
                 ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
+                ibu.replaceLorePlaceholder("{challenges-completed}", String.valueOf(PlayerDataManager.getChallengesCompleted(player)));
             } else {
                 ibu.addLore(config.getStringList("main-menu." + i + ".status.locked-lore"));
                 ibu.replaceLorePlaceholder("{player}", player.getName());
                 ibu.replaceLorePlaceholder("{experience-name}", config.getString("experience-name"));
                 ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
                 ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
+                ibu.replaceLorePlaceholder("{challenges-completed}", String.valueOf(PlayerDataManager.getChallengesCompleted(player)));
             }
         }
         //Add item enchantments

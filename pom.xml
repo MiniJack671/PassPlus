@@ -6,13 +6,13 @@
 
     <groupId>dev.nuer</groupId>
     <artifactId>PassPlus</artifactId>
-    <version>0.0.0.1-BETA</version>
+    <version>0.9.1.2</version>
     <packaging>jar</packaging>
 
     <name>PassPlus</name>
 
     <description>A Minecraft plugin remake of Fornite's Battlepass, the plugin features rich customisation and
-        the ability to expand.
+        the ability to expand with the ability to add an infinite number of challenge weeks.
     </description>
     <properties>
         <java.version>1.8</java.version>

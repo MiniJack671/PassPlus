@@ -21,7 +21,7 @@ public class PlayerChallengeCompletedListener implements Listener {
                     "{experience-name}", FileManager.get("config").getString("experience-name"));
         }
         //Play a sound
-        if (FileManager.get("challenge_config").getBoolean("completion-notification.sound")) {
+        if (FileManager.get("challenge_config").getBoolean("completion-notification.sound.enabled")) {
             event.getPlayer().playSound(event.getPlayer().getLocation(),
                     Sound.valueOf(FileManager.get("challenge_config").getString("completion-notification.sound.type").toUpperCase()),
                     FileManager.get("challenge_config").getInt("completion-notification.sound.volume"),

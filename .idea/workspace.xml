@@ -7,22 +7,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef7be3e0-63af-4615-a734-b8f2329b2d04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ChallengeApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/GeneralApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/Challenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/Challenge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/PlayerDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/PlayerDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/listeners/DataCreationOnJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/listeners/DataCreationOnJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/utils/PlayerFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/utils/PlayerFileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/listeners/PlayerTierListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/listeners/PlayerTierListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/MessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/MessageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/YamlFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/YamlFileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/challenges/challenge-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/challenges/challenge-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/challenges/week-1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/challenges/week-1.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/challenges/week-2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/challenges/week-2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/challenges/week-3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/challenges/week-3.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pass+.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pass+.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tiers/tier-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tiers/tier-gui.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PassPlus-0.0.0.1-BETA-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PassPlus-0.0.0.1-BETA-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PassPlus-0.0.0.1-BETA.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PassPlus-0.0.0.1-BETA.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PassPlus-0.0.0.1-BETA-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PassPlus-0.0.0.1-BETA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/challenges/challenge-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/challenges/challenge-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/challenges/week-1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/challenges/week-1.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/challenges/week-2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/challenges/week-2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/challenges/week-3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/challenges/week-3.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/api/ChallengeApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/api/ChallengeApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/api/ExperienceApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/api/ExperienceApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/api/TierApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/api/TierApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/challenges/Challenge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/challenges/Challenge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/challenges/listeners/ChallengeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/challenges/listeners/ChallengeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/cmd/PassCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/cmd/PassCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-PassPlus-0.0.0.1-BETA.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-PassPlus-0.0.0.1-BETA.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/gui/menu/MainMenuGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/gui/menu/MainMenuGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/playerData/PlayerDataManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/playerData/PlayerDataManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/playerData/utils/PlayerFileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/playerData/utils/PlayerFileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/pp/tiers/listeners/PlayerTierListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/pp/tiers/listeners/PlayerTierListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pass+.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pass+.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tiers/tier-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tiers/tier-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tiers/tier-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tiers/tier-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-PassPlus-0.0.0.1-BETA.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,22 +68,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="261">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4842#4843#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-1.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="2291">
+              <caret line="218" column="47" selection-start-line="218" selection-start-column="47" selection-end-line="218" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3420">
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/unlock-timers.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/pass+.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108">
+              <caret line="73" column="59" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/WeeklyChallengeManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,10 +143,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/SetupManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="851">
+              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/FileManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-444">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,6 +204,8 @@
       <find>.hasPermission(&quot;pass+.pass&quot;)</find>
       <find>&quot;config</find>
       <find>tier</find>
+      <find>week_1</find>
+      <find>&quot;tier-gui.</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\tiers</dir>
@@ -116,16 +217,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/listeners/DataCreationOnJoin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/PlayerChallengeManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/AbstractChallenge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/challengeTypes/PlayerKillChallenge.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/TimeManipulation.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/TimeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/BroadcastUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/challenges/unlock-timers.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/challenges/week-2.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/challenges/week-3.yml" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/ChallengeCountdownUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/WeeklyChallengeManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/events/ChallengeWeekUnlockEvent.java" />
@@ -138,35 +233,41 @@
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/ProgressBarUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/SetupManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/adminSub/ReloadCmd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/Challenge.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassAdminCmd.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeWeekUnlockListener.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/challenges/week-1.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/utils/PlayerFileUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/PlayerDataManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/PlayerTierManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/experience/events/PlayerExperienceGainEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/experience/PlayerExperienceManager.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/pass+.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/listeners/PlayerTierListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/adminSub/GiveCmd.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/challenges/challenge-config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/experience/listeners/ExperienceTierListener.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/PassPlusApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/PlayerDataApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/GeneralApi.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/tiers/tier-gui.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ChallengeApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/challenges/week-3.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/challenges/week-2.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/challenges/week-1.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/listeners/PlayerTierListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/challenges/challenge-config.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/Challenge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/PlayerDataManager.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/pass+.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/YamlFileUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/MessageUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/listeners/DataCreationOnJoin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/utils/PlayerFileUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/tiers/tier-gui.yml" />
       </list>
     </option>
   </component>
@@ -209,7 +310,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,26 +351,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pp" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PassPlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PassPlus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pp" type="462c0819:PsiDirectoryNode" />
-              <item name="experience" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PassPlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PassPlus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pp" type="462c0819:PsiDirectoryNode" />
-              <item name="experience" type="462c0819:PsiDirectoryNode" />
-              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+              <item name="enable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PassPlus" type="b2602c69:ProjectViewProjectNode" />
@@ -288,7 +370,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pp" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PassPlus" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +389,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pp" type="462c0819:PsiDirectoryNode" />
+              <item name="playerData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PassPlus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PassPlus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pp" type="462c0819:PsiDirectoryNode" />
+              <item name="playerData" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PassPlus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PassPlus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pp" type="462c0819:PsiDirectoryNode" />
+              <item name="playerData" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,7 +438,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,9 +513,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-103" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,46 +543,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/listeners/DataCreationOnJoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/PassPlus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/TimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/AbstractGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-624">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/BroadcastUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-3.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/ChallengeCountdownUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/challengeTypes/PlayerMineChallenge.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/challengeTypes/PlayerKillChallenge.java" />
@@ -510,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/SetupManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/adminSub/ExperienceCmd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -536,9 +590,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-2.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.14.1-R0.1-SNAPSHOT/spigot-api-1.14.1-R0.1-20190527.022734-35-sources.jar!/org/bukkit/plugin/PluginManager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -563,43 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/utils/PlayerFileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/unlock-timers.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3048">
-          <caret line="127" column="45" lean-forward="true" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -650,33 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pass+.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/listeners/PlayerTierListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/experience/PlayerExperienceManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -687,78 +674,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/WeeklyChallengeManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/Challenge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/PlayerDataApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/GeneralApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/PlayerDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/PlayerDataApi.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/PlayerTierManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -766,20 +682,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/challenge-config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -810,42 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/tiers/tier-gui.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3486#3487#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-1.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ChallengeApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="708">
@@ -860,23 +726,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="612">
+          <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/ExperienceApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/GeneralApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="840">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/api/TierApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/cmd/PassCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-3.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="218" selection-start-line="218" selection-end-line="218" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="218" column="47" selection-start-line="218" selection-start-column="47" selection-end-line="218" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/tiers/listeners/PlayerTierListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/challenge-config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1440">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/ChallengeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3984">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/listeners/PlayerChallengeCompletedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/Challenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="50" column="110" selection-start-line="50" selection-start-column="110" selection-end-line="50" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/PlayerDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/SetupManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/YamlFileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/utils/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="128" column="57" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/listeners/DataCreationOnJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="29" column="127" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="82" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/playerData/utils/PlayerFileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="48" column="126" selection-start-line="48" selection-start-column="126" selection-end-line="48" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/challenges/ChallengeWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/menu/MainMenuGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/enable/WeeklyChallengeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/pass+.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="73" column="59" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/tiers/tier-gui.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="496" column="10" selection-start-line="496" selection-start-column="10" selection-end-line="496" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/pp/gui/tier/TierMenuGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4842#4843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/tiers/tier-config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3420">
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/unlock-timers.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/challenges/week-1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2291">
+          <caret line="218" column="47" selection-start-line="218" selection-start-column="47" selection-end-line="218" selection-end-column="47" />
         </state>
       </provider>
     </entry>

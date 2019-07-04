@@ -31,11 +31,11 @@ public class YamlFileUtil {
         this.file = new File(instance.getDataFolder(), fileName);
         if (!file.exists()) {
             instance.saveResource(fileName, false);
+            instance.getLogger().info("The internal YAML file: " + fileName + " was not found, actively creating / loading it now.");
         }
         yamlFile = new YamlConfiguration();
         try {
             yamlFile.load(file);
-            instance.getLogger().info("Successfully loaded the file: " + fileName);
         } catch (InvalidConfigurationException e) {
             instance.getLogger().severe("The supplied file " + fileName +
                     " is not in the correct format, please check your YAML syntax.");

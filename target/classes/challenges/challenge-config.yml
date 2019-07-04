@@ -19,7 +19,7 @@ completion-notification:
 
 challenge-menu-gui:
   size: 18
-  name: '&e&lChallenges'
+  name: '&d&lChallenges'
   1:
     week: 1
     slot: 0

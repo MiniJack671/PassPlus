@@ -45,7 +45,6 @@ public class ChallengeWeek {
                     config.getDouble("challenges." + i + ".completion-requirements.total"),
                     config.getDouble("challenges." + i + ".completion-requirements.experience-per"));
             challenges.add(challenge);
-            PassPlus.log.info("Successfully loaded challenge: " + config.getString("challenges." + i + ".challenge-id"));
         }
     }
 

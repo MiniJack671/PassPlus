@@ -14,7 +14,7 @@ gui:
     lore:
       - '&7 '
       - '&7Requirements:'
-      - ' &f&l* &e10 Player Kills'
+      - ' &f&l* &e10 player kills'
       - '&7 '
       - '&7Rewards:'
       - ' &f&l* &e1.34 {experience-name} &7per &ekill'
@@ -36,10 +36,10 @@ gui:
     lore:
       - '&7 '
       - '&7Requirements:'
-      - ' &f&l* &eMine 100 Dirt'
+      - ' &f&l* &eMine 1000 dirt'
       - '&7 '
       - '&7Rewards:'
-      - ' &f&l* &e0.1 {experience-name} &7per &eblock mined'
+      - ' &f&l* &e0.01 {experience-name} &7per &eblock mined'
       - '&7 '
       - '&7Progress:'
       - ' &f&l* {progress-bar}'
@@ -58,7 +58,7 @@ gui:
     lore:
       - '&7 '
       - '&7Requirements:'
-      - ' &f&l* &ePlace 2.5K Blocks'
+      - ' &f&l* &ePlace 2,500 blocks'
       - '&7 '
       - '&7Rewards:'
       - ' &f&l* &e0.006 {experience-name} &7per &eblock placed'
@@ -80,7 +80,7 @@ gui:
     lore:
       - '&7 '
       - '&7Requirements:'
-      - ' &f&l* &eDie 100 Times'
+      - ' &f&l* &eDie 100 times'
       - '&7 '
       - '&7Rewards:'
       - ' &f&l* &e0.034 {experience-name} &7per &edeath'
@@ -168,7 +168,7 @@ gui:
     lore:
       - '&7 '
       - '&7Requirements:'
-      - ' &f&l* &eEat 500 Steak'
+      - ' &f&l* &eEat 500 steak'
       - '&7 '
       - '&7Rewards:'
       - ' &f&l* &e0.01 {experience-name} &7per &esteak eaten'
@@ -182,6 +182,28 @@ gui:
     item-flags:
       - 'hide_enchants'
   9:
+    challenge-id: 'week_1-challenge_9'
+    slot: 8
+    material: 'golden_apple'
+    data-value: 1
+    name: '&b&lRobust I'
+    lore:
+      - '&7 '
+      - '&7Requirements:'
+      - ' &f&l* &eEat 25 notch apples'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &e0.4 {experience-name} &7per &eapple eaten'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  10:
     slot: 13
     material: 'barrier'
     data-value: 0
@@ -194,7 +216,7 @@ gui:
     item-flags:
     exit-button: true
 
-# Types: pvp, slay-mob, mine, eat, chat, fish,
+# See GitHub wiki for different challenge types
 challenges:
   1:
     type: 'player_kills'
@@ -213,7 +235,7 @@ challenges:
       data-value: '0'
     completion-requirements:
       total: 10 # mine 100 dirt blocks
-      experience-per: 0.1
+      experience-per: 0.01
   3:
     type: 'player_place'
     challenge-id: 'week_1-challenge_3'
@@ -268,3 +290,12 @@ challenges:
     completion-requirements:
       total: 5 # eat 500 beef
       experience-per: 0.01
+  9:
+    type: 'player_consume'
+    challenge-id: 'week_1-challenge_9'
+    active:
+      element: 'golden_apple'
+      data-value: '1'
+    completion-requirements:
+      total: 10 # eat 25 notch apples
+      experience-per: 0.4

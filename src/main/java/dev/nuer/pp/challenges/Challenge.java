@@ -48,6 +48,7 @@ public class Challenge {
         if (pfu.get().get("pass-challenges.week-" + week + "." + challengeId) == null)
             return;
         pfu.get().set("pass-challenges.week-" + week + "." + challengeId, -1);
+        pfu.get().set("pass-info.challenges-completed", pfu.get().getInt("pass-info.challenges-completed") + 1);
         pfu.save();
     }
 

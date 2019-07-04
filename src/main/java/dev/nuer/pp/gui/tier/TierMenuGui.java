@@ -20,15 +20,21 @@ public class TierMenuGui extends AbstractGui {
      *
      * @param player Player, the person who open the gui
      */
-    public TierMenuGui(Player player) {
-        super(FileManager.get("tier_gui").getInt("tier-gui.size"),
-                ColorUtil.colorize(FileManager.get("tier_gui").getString("tier-gui.name")));
-        for (int i = 0; i < FileManager.get("tier_gui").getInt("tier-gui.size"); i++) {
+    public TierMenuGui(Player player, int page) {
+        super(FileManager.get("tier_gui").getInt("gui-page-" + page + ".size"),
+                ColorUtil.colorize(FileManager.get("tier_gui").getString("gui-page-" + page + ".name")));
+        for (int i = 1; i <= FileManager.get("tier_gui").getInt("gui-page-" + page + ".size"); i++) {
             try {
                 int id = i;
-                setItemInSlot(FileManager.get("tier_gui").getInt("tier-gui." + i + ".slot"), buildItem(i, player), player1 -> {
-                    if (FileManager.get("tier_gui").getBoolean("tier-gui." + id + ".exit-button")) {
+                setItemInSlot(FileManager.get("tier_gui").getInt("gui-page-" + page + "." + i + ".slot"), buildItem(i, player, page), player1 -> {
+                    if (FileManager.get("tier_gui").getBoolean("gui-page-" + page + "." + id + ".exit-button")) {
                         new MainMenuGui(player1).open(player1);
+                    }
+                    if (FileManager.get("tier_gui").getBoolean("gui-page-" + page + "." + id + ".previous-page.enabled")) {
+                        new TierMenuGui(player1, FileManager.get("tier_gui").getInt("gui-page-" + page + "." + id + ".previous-page.page")).open(player1);
+                    }
+                    if (FileManager.get("tier_gui").getBoolean("gui-page-" + page + "." + id + ".next-page.enabled")) {
+                        new TierMenuGui(player1, FileManager.get("tier_gui").getInt("gui-page-" + page + "." + id + ".next-page.page")).open(player1);
                     }
                 });
             } catch (Exception e) {
@@ -37,19 +43,19 @@ public class TierMenuGui extends AbstractGui {
         }
     }
 
-    public ItemStack buildItem(int i, Player player) {
+    public ItemStack buildItem(int i, Player player, int page) {
         YamlConfiguration config = FileManager.get("tier_gui");
         //Create the item
-        ItemBuilderUtil ibu = new ItemBuilderUtil(config.getString("tier-gui." + i + ".material"),
-                config.getString("tier-gui." + i + ".data-value"));
+        ItemBuilderUtil ibu = new ItemBuilderUtil(config.getString("gui-page-" + page + "." + i + ".material"),
+                config.getString("gui-page-" + page + "." + i + ".data-value"));
         //Set the item name
-        ibu.addName(ColorUtil.colorize(config.getString("tier-gui." + i + ".name")));
+        ibu.addName(ColorUtil.colorize(config.getString("gui-page-" + page + "." + i + ".name")));
         //Add the first section of lore, replace the relevant placeholders
-        ibu.addLore(config.getStringList("tier-gui." + i + ".lore"));
+        ibu.addLore(config.getStringList("gui-page-" + page + "." + i + ".lore"));
         ibu.replaceLorePlaceholder("{player}", player.getName());
         ibu.replaceLorePlaceholder("{experience-name}", FileManager.get("config").getString("experience-name"));
         ibu.replaceLorePlaceholder("{tier}", String.valueOf(PlayerTierManager.getTier(player)));
-        if (completed(config.getInt("tier-gui." + i + ".tier"), PlayerTierManager.getTier(player))) {
+        if (completed(config.getInt("gui-page-" + page + "." + i + ".tier"), PlayerTierManager.getTier(player))) {
             ibu.replaceLorePlaceholder("{exp}", "MAX");
         } else {
             ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
@@ -61,11 +67,15 @@ public class TierMenuGui extends AbstractGui {
         } catch (Exception e) {
             ibu.replaceLorePlaceholder("{progress-bar}", "debug");
         }
-        ibu.replaceLorePlaceholder("{status}", getStatus(config.getInt("tier-gui." + i + ".tier"), PlayerTierManager.getTier(player)));
+        try {
+            ibu.replaceLorePlaceholder("{status}", getStatus(config.getInt("gui-page-" + page + "." + i + ".tier"), PlayerTierManager.getTier(player)));
+        } catch (Exception e) {
+            ibu.replaceLorePlaceholder("{status}", "debug");
+        }
         //Add item enchantments
-        ibu.addEnchantments(config.getStringList("tier-gui." + i + ".enchantments"));
+        ibu.addEnchantments(config.getStringList("gui-page-" + page + "." + i + ".enchantments"));
         //Add item flags
-        ibu.addItemFlags(config.getStringList("tier-gui." + i + ".item-flags"));
+        ibu.addItemFlags(config.getStringList("gui-page-" + page + "." + i + ".item-flags"));
         return ibu.getItem();
     }
 

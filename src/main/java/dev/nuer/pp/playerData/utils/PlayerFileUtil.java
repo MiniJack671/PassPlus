@@ -42,10 +42,11 @@ public class PlayerFileUtil {
         config.set("pass-info.valid-copy", false);
         config.set("pass-info.tier", 0);
         config.set("pass-info.experience", 0.0);
+        config.set("pass-info.challenges-completed", 0);
         //Set defaults for the information about the players current & completed challenges
         config.createSection("pass-challenges");
         //Send a nice message
-        PassPlus.log.info("Successfully created a new player-data file: " + fileName + ", all defaults have been created.");
+        PassPlus.log.info("Successfully created a new player-data file: " + fileName + ", actively creating / setting defaults.");
     }
 
     private void setupChallengeWeeks() {

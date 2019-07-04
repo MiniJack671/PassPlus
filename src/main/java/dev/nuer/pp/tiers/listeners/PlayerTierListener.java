@@ -18,7 +18,7 @@ public class PlayerTierListener implements Listener {
         //Send the player a tier message
         MessageUtil.message("tier_config", event.getNewPlayerTier() + ".rewards.message", event.getPlayer());
         //Play a sound
-        if (FileManager.get("tier_config").getBoolean("tier-up-notification.sound")) {
+        if (FileManager.get("tier_config").getBoolean("tier-up-notification.sound.enabled")) {
             event.getPlayer().playSound(event.getPlayer().getLocation(),
                     Sound.valueOf(FileManager.get("tier_config").getString("tier-up-notification.sound.type").toUpperCase()),
                     FileManager.get("tier_config").getInt("tier-up-notification.sound.volume"),

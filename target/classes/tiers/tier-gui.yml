@@ -3,9 +3,9 @@ status:
   active: '&6&l*&f&l*&6&l* &e&lACTIVE &6&l*&f&l*&6&l*'
   locked: '&4&l*&f&l*&4&l* &c&lLOCKED &4&l*&f&l*&4&l*'
 
-tier-gui:
-  size: 54
-  name: '&b&lTiers'
+gui-page-1:
+  size: 27
+  name: '&b&lTiers page #1'
   1:
     tier: 1
     slot: 0
@@ -120,7 +120,394 @@ tier-gui:
     item-flags:
       - 'hide_enchants'
   6:
-    slot: 49
+    tier: 6
+    slot: 5
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 6'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e25.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e25.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  7:
+    tier: 7
+    slot: 6
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 7'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e30.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e30.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  8:
+    tier: 8
+    slot: 7
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 8'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e35.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e35.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  9:
+    tier: 9
+    slot: 8
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 9'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e40.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e40.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  10:
+    tier: 10
+    slot: 9
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 10'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e45.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e45.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  11:
+    tier: 11
+    slot: 10
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 11'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e50.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e50.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  12:
+    tier: 12
+    slot: 11
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 12'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e55.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e55.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  13:
+    tier: 13
+    slot: 12
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 13'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e60.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e60.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  14:
+    tier: 14
+    slot: 13
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 14'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e65.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e65.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  15:
+    tier: 15
+    slot: 14
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 15'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e70.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e70.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  16:
+    tier: 16
+    slot: 15
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 16'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e75.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e75.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  17:
+    tier: 17
+    slot: 16
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 17'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e80.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e80.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  18:
+    tier: 18
+    slot: 17
+    material: 'emerald'
+    data-value: 0
+    name: '&b&lTier 18'
+    lore:
+      - '&7 '
+      - '&7Requirement(s):'
+      - ' &f&l* &e85.00 {experience-name}'
+      - '&7 '
+      - '&7Progress:'
+      - ' &f&l* &e{exp}&7/&e85.00'
+      - ' &f&l* {progress-bar}'
+      - '&7 '
+      - '&7Rewards:'
+      - ' &f&l* &a$250,000&7.'
+      - '&7 '
+      - '{status}'
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+  19:
+    slot: 22
+    material: 'barrier'
+    data-value: 0
+    name: '&c&lExit'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to exit this gui.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    exit-button: true
+  20:
+    slot: 23
+    material: 'map'
+    data-value: 0
+    name: '&e&lNext Page ->'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to jump to the next page.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    next-page:
+      enabled: true
+      page: 2
+
+gui-page-2:
+  size: 27
+  name: '&b&lTiers page #2'
+  1:
+    slot: 21
+    material: 'map'
+    data-value: 0
+    name: '&e&l<- Previous Page'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to return to the previous page.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    previous-page:
+      enabled: true
+      page: 1
+  2:
+    slot: 22
+    material: 'barrier'
+    data-value: 0
+    name: '&c&lExit'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to exit this gui.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    exit-button: true
+  3:
+    slot: 23
+    material: 'map'
+    data-value: 0
+    name: '&e&lNext Page ->'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to jump to the next page.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    next-page:
+      enabled: true
+      page: 3
+
+gui-page-3:
+  size: 27
+  name: '&b&lTiers page #3'
+  1:
+    slot: 21
+    material: 'map'
+    data-value: 0
+    name: '&e&l<- Previous Page'
+    lore:
+      - '&7 '
+      - '&7&o((left-click to return to the previous page.))'
+      - '&7 '
+    enchantments:
+    item-flags:
+    previous-page:
+      enabled: true
+      page: 2
+  2:
+    slot: 22
     material: 'barrier'
     data-value: 0
     name: '&c&lExit'

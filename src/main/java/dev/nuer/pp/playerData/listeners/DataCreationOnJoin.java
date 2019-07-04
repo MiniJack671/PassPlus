@@ -21,11 +21,21 @@ public class DataCreationOnJoin implements Listener {
         PlayerDataManager.getPlayerFile(event.getPlayer());
         if (!FileManager.get("config").getBoolean("enable-welcome-message")) return;
         Bukkit.getScheduler().runTaskLater(PassPlus.instance, () -> {
-            MessageUtil.message("messages", "player-welcome", event.getPlayer(),
-                    "{player}", event.getPlayer().getName(),
-                    "{tier}", String.valueOf(PlayerTierManager.getTier(event.getPlayer())),
-                    "{experience-name}", FileManager.get("config").getString("experience-name"),
-                    "{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(event.getPlayer())));
+            if (PlayerDataManager.hasCopy(event.getPlayer())) {
+                MessageUtil.message("messages", "player-welcome.active-copy", event.getPlayer(),
+                        "{player}", event.getPlayer().getName(),
+                        "{tier}", String.valueOf(PlayerTierManager.getTier(event.getPlayer())),
+                        "{experience-name}", FileManager.get("config").getString("experience-name"),
+                        "{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(event.getPlayer())),
+                        "{challenges-completed}", String.valueOf(PlayerDataManager.getChallengesCompleted(event.getPlayer())));
+            } else {
+                MessageUtil.message("messages", "player-welcome.no-copy", event.getPlayer(),
+                        "{player}", event.getPlayer().getName(),
+                        "{tier}", String.valueOf(PlayerTierManager.getTier(event.getPlayer())),
+                        "{experience-name}", FileManager.get("config").getString("experience-name"),
+                        "{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(event.getPlayer())),
+                        "{challenges-completed}", String.valueOf(PlayerDataManager.getChallengesCompleted(event.getPlayer())));
+            }
         }, 10L);
     }
 }
