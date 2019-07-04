@@ -53,7 +53,7 @@ public class ChallengeWeek {
         //Load each challenge for the week into the array
         loadChallenges();
         //Start the countdown
-        if (FileManager.get("config").getBoolean("challenge-countdown-enabled")) countdown();
+        countdown();
     }
 
     public void countdown() {
@@ -61,9 +61,19 @@ public class ChallengeWeek {
             setUnlocked(true);
             return;
         }
+        if (unlocked) {
+            return;
+        }
         if (!FileManager.get("config").getBoolean("challenge-countdown-enabled")) return;
         //Run the countdown timer
         counterTaskId = Bukkit.getScheduler().runTaskTimer(PassPlus.instance, () -> {
+            //Check that the week is still locked
+            if (unlocked) {
+                //Fire the custom event
+                Bukkit.getPluginManager().callEvent(new ChallengeWeekUnlockEvent(this));
+                //Cancel the task
+                counterTaskId.cancel();
+            }
             //Store the time remaining
             int timeRemaining = FileManager.get("unlock_timers").getInt("timers.week-" + week) - 1;
             //Check that the time remaining is greater than 0

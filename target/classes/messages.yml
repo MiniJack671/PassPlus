@@ -9,6 +9,9 @@ player-welcome:
 tier-query:
   - '&a&lPass+&2: &7You are currently tier &e{tier}&7.'
 
+experience-query:
+  - '&a&lPass+&2: &7You currently have &e{exp} {experience-name}&7.'
+
 # -- Pass command messages --
 permission-debug:
   - '&a&lPass+&2: &fPermission Debug'

@@ -26,7 +26,7 @@ tier-up-notification:
       - '&7&o((Tier &e2 &7&orewards have been given to you.))'
     commands:
       - 't+ give {player} sell stick:0 1 1 50'
-      - 'eco give {player} 25000'
+      - 'eco give {player} 250000'
 #
 3:
   experience-to-level: 10.00
@@ -42,7 +42,7 @@ tier-up-notification:
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e4&7.'
-      - '&7&o((Tier &e3 &7&orewards have been given to you.))'
+      - '&7&o((Tier &e4 &7&orewards have been given to you.))'
     commands:
       - 't+ give {player} harvester diamond_hoe:0 1 5 15000'
 #
@@ -51,6 +51,6 @@ tier-up-notification:
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e5&7.'
-      - '&7&o((Tier &e3 &7&orewards have been given to you.))'
+      - '&7&o((Tier &e5 &7&orewards have been given to you.))'
     commands:
       - 't+ give {player} chunk feather:0 1 2 10'

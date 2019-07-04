@@ -8,11 +8,13 @@ import dev.nuer.pp.gui.menu.MainMenuGui;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
 import dev.nuer.pp.utils.ItemBuilderUtil;
+import dev.nuer.pp.utils.ProgressBarUtil;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 public class TierMenuGui extends AbstractGui {
+
     /**
      * Constructor the create a new Gui
      *
@@ -51,6 +53,13 @@ public class TierMenuGui extends AbstractGui {
             ibu.replaceLorePlaceholder("{exp}", "MAX");
         } else {
             ibu.replaceLorePlaceholder("{exp}", PassPlus.numberFormat.format(PlayerExperienceManager.getExperience(player)));
+        }
+        try {
+            ibu.replaceLorePlaceholder("{progress-bar}",
+                    ProgressBarUtil.bar(PlayerExperienceManager.getExperience(player),
+                            FileManager.get("tier_config").getDouble(i + ".experience-to-level")));
+        } catch (Exception e) {
+            ibu.replaceLorePlaceholder("{progress-bar}", "debug");
         }
         ibu.replaceLorePlaceholder("{status}", getStatus(config.getInt("tier-gui." + i + ".tier"), PlayerTierManager.getTier(player)));
         //Add item enchantments
