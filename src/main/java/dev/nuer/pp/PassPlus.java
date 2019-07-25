@@ -4,6 +4,7 @@ import dev.nuer.pp.cmd.PassAdminCmd;
 import dev.nuer.pp.cmd.PassCmd;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.enable.SetupManager;
+import dev.nuer.pp.utils.VersionUtil;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.text.DecimalFormat;
@@ -19,6 +20,8 @@ public final class PassPlus extends JavaPlugin {
     public static Logger log;
     //Static way to format price placeholders
     public static DecimalFormat numberFormat = new DecimalFormat("#,###.##");
+    //Store the version string
+    public static String version = "0.9.1.3";
 
     /**
      * Method called on plugin start up
@@ -35,6 +38,11 @@ public final class PassPlus extends JavaPlugin {
         registerCommads();
         //Register the plugins events
         SetupManager.registerEvents(instance);
+        //Check that the plugin is in the latest version
+        if (FileManager.get("config").getBoolean("update-version-message")) {
+            VersionUtil.checkVersion(null);
+            getServer().getPluginManager().registerEvents(new VersionUtil(), this);
+        }
         //Send a nice message
         log.info("Thank you for using Pass+! If you find any bugs please contact nbdSteve#0583 on discord.");
     }

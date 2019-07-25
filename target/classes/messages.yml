@@ -36,7 +36,7 @@ invalid-pass:
 
 # -- Admin command messages --
 admin-cmd-help:
-  - '&a&lPass+&2&lAdmin&e: &7Check the GitHub for a detailed command list: &f&n[link]'
+  - '&a&lPass+&2&lAdmin&e: &7Check the GitHub for a detailed command list: &f&nhttps://github.com/nbdSteve/PassPlus/wiki/Command-Usage'
 
 admin-cmd-tier-manipulation:
   - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7is now at tier &e{tier}&7.'
@@ -49,3 +49,8 @@ admin-cmd-reload:
 
 give-success:
   - '&a&lPass+&2&lAdmin&e: &7Action successful, &e{player} &7has received a copy of &aPass+&7.'
+
+outdated-version:
+  - '&7--= &a&lPass+&e: &fUpdater &7=--'
+  - ' - &7You are using version &fPass+ v{currentVersion}&7, which is out of date.'
+  - ' - &7Please &e&l*UPDATE*&7 to the latest version, &fPass+ v{latestVersion}&7.'

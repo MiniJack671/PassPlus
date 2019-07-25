@@ -9,6 +9,9 @@ enable-welcome-message: true
 # If the challenges for each week should countdown
 challenge-countdown-enabled: true
 
+# If the update message will be sent to OPs
+update-version-message: true
+
 # give notification (for the receiver)
 give-notification:
   message:

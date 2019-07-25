@@ -18,6 +18,7 @@ D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\api\ChallengeApi.ja
 D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\challenges\ChallengeWeek.java
 D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\experience\PlayerExperienceManager.java
 D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\challenges\listeners\ChallengeWeekUnlockListener.java
+D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\utils\VersionUtil.java
 D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\api\TierApi.java
 D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\utils\TimeUtil.java
 D:\Java\minecraft\premium\PassPlus\src\main\java\dev\nuer\pp\utils\TierCommandUtil.java
