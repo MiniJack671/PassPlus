@@ -21,7 +21,7 @@ public final class PassPlus extends JavaPlugin {
     //Static way to format price placeholders
     public static DecimalFormat numberFormat = new DecimalFormat("#,###.##");
     //Store the version string
-    public static String version = "0.9.1.3";
+    public static String version = "0.9.1.4";
 
     /**
      * Method called on plugin start up

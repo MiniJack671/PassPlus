@@ -68,7 +68,7 @@ public class ChallengeApi {
      * @param week int, the week to query
      * @return boolean
      */
-    public static boolean areChallengesUnlocked(int week) {
+    public static boolean isChallengeWeekUnlocked(int week) {
         return WeeklyChallengeManager.getWeek(week).isUnlocked();
     }
 
