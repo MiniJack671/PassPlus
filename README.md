@@ -6,7 +6,7 @@ Ultimately I have come to the conclusion that I want to pursue other things rath
 
 ---
 
-Pass+ can be downloaded from [Spigot](https://www.spigotmc.org/resources/tools.66897/) resource page.
+Pass+ can be downloaded from [Spigot](https://www.spigotmc.org/resources/pass-battlepass-plugin.69650/) resource page.
 
 For more information about the plugin, permissions, and commands please refer to the [wiki](https://github.com/nbdSteve/PassPlus/wiki).
 
