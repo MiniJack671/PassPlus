@@ -1,5 +1,5 @@
 name: PassPlus
-version: 0.9.1.4
+version: 0.9.2.1
 main: dev.nuer.pp.PassPlus
 api-version: 1.13
 prefix: Pass+

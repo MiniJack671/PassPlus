@@ -6,7 +6,7 @@
 
     <groupId>dev.nuer</groupId>
     <artifactId>PassPlus</artifactId>
-    <version>0.9.1.4</version>
+    <version>0.9.2.1</version>
     <packaging>jar</packaging>
 
     <name>PassPlus</name>

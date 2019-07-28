@@ -17,7 +17,7 @@ give-notification:
   message:
     enabled: true
     text:
-      - '&a&lPass+&2: &7Thank you for purchasing your copy of &aPass+&7.'
+      - '&a&lPass+&2: &7Thank you for purchasing the premium version of &aPass+&7.'
   sound:
     enabled: true
     type: 'level_up'
@@ -52,7 +52,7 @@ main-menu:
       - '&7 '
       - '&7&o((left-click to view the full tier list for &f[server]&7&o))'
       - '&7 '
-      - '&7Interested in embarking on the &aPass+ &7journey?'
+      - '&7Interested in embarking on the premium &aPass+ &7journey?'
       - '&7Purchase your copy from &f&nshop.example.com&7 for &c&l$-.00'
     enchantments:
       - 'lure:1'
@@ -64,19 +64,29 @@ main-menu:
     status:
       add-lore: true
       locked-lore:
-        - '&7You &c&ndo not&7 have a copy of &aPass+&7.'
+        - '&7Player: &e{player}'
+        - '&7Current tier: &e{tier}'
+        - '&7Current {experience-name}: &e{exp}'
+        - '&7Challenges completed: &e{challenges-completed}'
+        - '&7 '
+        - '&7You &c&ndo not&7 have a premium copy of &aPass+&7.'
+        - '&7Some challenges and rewards are exclusive'
+        - '&7to the premium version of &aPass+&7.'
         - '&7 '
         - '&7Purchase a copy from the server store.'
         - '&f&nstore.example.com&7 for &c&l$-.00'
         - '&7 '
-        - '&4&l*&f&l*&4&l* &c&lLOCKED &4&l*&f&l*&4&l*'
+        - '&4&l*&f&l*&4&l* &e&lPREMIUM &c&lLOCKED &4&l*&f&l*&4&l*'
       unlocked-lore:
         - '&7Player: &e{player}'
         - '&7Current tier: &e{tier}'
         - '&7Current {experience-name}: &e{exp}'
         - '&7Challenges completed: &e{challenges-completed}'
         - '&7 '
-        - '&2&l*&f&l*&2&l* &a&lUNLOCKED &2&l*&f&l*&2&l*'
+        - '&7Thank you for purchasing a premium copy of &aPass+&7.'
+        - '&7Now you can tier up faster than ever before...'
+        - '&7 '
+        - '&2&l*&f&l*&2&l* &e&lPREMIUM &a&lUNLOCKED &2&l*&f&l*&2&l*'
     material: 'ender_chest'
     data-value: 0
     name: '&a&lPass+'

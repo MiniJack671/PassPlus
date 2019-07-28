@@ -15,8 +15,9 @@ public class Challenge {
     private short dataValue;
     private double total;
     private double expPer;
+    private boolean premium;
 
-    public Challenge(String week, String type, String challengeId, String element, short dataValue, double total, double expPer) {
+    public Challenge(String week, String type, String challengeId, String element, short dataValue, double total, double expPer, boolean premium) {
         this.week = week;
         this.type = type;
         this.challengeId = challengeId;
@@ -24,6 +25,7 @@ public class Challenge {
         this.dataValue = dataValue;
         this.total = total;
         this.expPer = expPer;
+        this.premium = premium;
     }
 
     public double getProgress(Player player) {
@@ -74,5 +76,9 @@ public class Challenge {
 
     public double getExpPer() {
         return expPer;
+    }
+
+    public boolean isPremium() {
+        return premium;
     }
 }

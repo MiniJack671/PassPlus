@@ -3,6 +3,7 @@ package dev.nuer.pp.gui.challenge;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.enable.WeeklyChallengeManager;
 import dev.nuer.pp.gui.AbstractGui;
+import dev.nuer.pp.playerData.PlayerDataManager;
 import dev.nuer.pp.tiers.PlayerTierManager;
 import dev.nuer.pp.utils.ColorUtil;
 import dev.nuer.pp.utils.ItemBuilderUtil;
@@ -59,6 +60,10 @@ public class WeeklyChallengeGui extends AbstractGui {
 
     public String getStatus(int i, Player player, YamlConfiguration config, String week) {
         try {
+            if (!PlayerDataManager.hasCopy(player) &&
+                    WeeklyChallengeManager.getChallenge(config.getString("gui." + i + ".challenge-id")).isPremium()) {
+                return ColorUtil.colorize(FileManager.get("challenges_week_" + week).getString("status.locked"));
+            }
             if (WeeklyChallengeManager.getChallenge(config.getString("gui." + i + ".challenge-id")).getProgress(player) != -1) {
                 return ColorUtil.colorize(FileManager.get("challenges_week_" + week).getString("status.active"));
             } else {

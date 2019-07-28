@@ -43,7 +43,8 @@ public class ChallengeWeek {
                     config.getString("challenges." + i + ".active.element"),
                     Short.parseShort(config.getString("challenges." + i + ".active.data-value")),
                     config.getDouble("challenges." + i + ".completion-requirements.total"),
-                    config.getDouble("challenges." + i + ".completion-requirements.experience-per"));
+                    config.getDouble("challenges." + i + ".completion-requirements.experience-per"),
+                    config.getBoolean("challenges." + i + ".premium"));
             challenges.add(challenge);
         }
     }

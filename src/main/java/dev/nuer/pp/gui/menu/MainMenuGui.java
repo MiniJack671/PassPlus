@@ -28,20 +28,22 @@ public class MainMenuGui extends AbstractGui {
                 int id = i;
                 setItemInSlot(FileManager.get("config").getInt("main-menu." + i + ".slot"), buildItem(i, player), player1 -> {
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-tiers")) {
-                        if (PlayerDataManager.hasCopy(player1)) {
-                            new TierMenuGui(player1, 1).open(player1);
-                        } else {
-                            MessageUtil.message("messages", "invalid-pass", player1);
-                            player1.closeInventory();
-                        }
+//                        if (PlayerDataManager.hasCopy(player1)) {
+//                            new TierMenuGui(player1, 1).open(player1);
+//                        } else {
+//                            MessageUtil.message("messages", "invalid-pass", player1);
+//                            player1.closeInventory();
+//                        }
+                        new TierMenuGui(player1, 1).open(player1);
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".open-challenges")) {
-                        if (PlayerDataManager.hasCopy(player1)) {
-                            new ChallengeMenuGui(player1).open(player1);
-                        } else {
-                            MessageUtil.message("messages", "invalid-pass", player1);
-                            player1.closeInventory();
-                        }
+//                        if (PlayerDataManager.hasCopy(player1)) {
+//                            new ChallengeMenuGui(player1).open(player1);
+//                        } else {
+//                            MessageUtil.message("messages", "invalid-pass", player1);
+//                            player1.closeInventory();
+//                        }
+                        new ChallengeMenuGui(player1).open(player1);
                     }
                     if (FileManager.get("config").getBoolean("main-menu." + id + ".exit-button")) {
                         player1.closeInventory();

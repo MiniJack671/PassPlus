@@ -1,6 +1,7 @@
 status:
   complete: '&2&l*&f&l*&2&l* &a&lCOMPLETED &2&l*&f&l*&2&l*'
   active: '&6&l*&f&l*&6&l* &e&lACTIVE &6&l*&f&l*&6&l*'
+  locked: '&c&l*&4&l*&c&l* &e&lPREMIUM CHALLENGE &c&l*&4&l*&c&l*'
 
 gui:
   size: 18
@@ -227,6 +228,7 @@ challenges:
     completion-requirements:
       total: 13.4 # kill 10 players
       experience-per: 1.34
+    premium: false
   2:
     type: 'player_mine'
     challenge-id: 'week_1-challenge_2'
@@ -236,6 +238,7 @@ challenges:
     completion-requirements:
       total: 10 # mine 100 dirt blocks
       experience-per: 0.01
+    premium: true
   3:
     type: 'player_place'
     challenge-id: 'week_1-challenge_3'
@@ -245,6 +248,7 @@ challenges:
     completion-requirements:
       total: 15 # place 2.5k blocks
       experience-per: 0.006
+    premium: true
   4:
     type: 'player_deaths'
     challenge-id: 'week_1-challenge_4'
@@ -254,6 +258,7 @@ challenges:
     completion-requirements:
       total: 3.4 # die 100 times
       experience-per: 0.034
+    premium: true
   5:
     type: 'player_kill_mob'
     challenge-id: 'week_1-challenge_5'
@@ -263,6 +268,7 @@ challenges:
     completion-requirements:
       total: 18.72 # kill 5850 blaze
       experience-per: 0.0032
+    premium: false
   6:
     type: 'player_chat'
     challenge-id: 'week_1-challenge_6'
@@ -272,6 +278,7 @@ challenges:
     completion-requirements:
       total: 2.5 # chat 200 times
       experience-per: 0.0125
+    premium: false
   7:
     type: 'player_fish'
     challenge-id: 'week_1-challenge_7'
@@ -281,6 +288,7 @@ challenges:
     completion-requirements:
       total: 7.5 # catch 50 items
       experience-per: 0.15
+    premium: true
   8:
     type: 'player_consume'
     challenge-id: 'week_1-challenge_8'
@@ -290,6 +298,7 @@ challenges:
     completion-requirements:
       total: 5 # eat 500 beef
       experience-per: 0.01
+    premium: true
   9:
     type: 'player_consume'
     challenge-id: 'week_1-challenge_9'
@@ -299,3 +308,4 @@ challenges:
     completion-requirements:
       total: 10 # eat 25 notch apples
       experience-per: 0.4
+    premium: true

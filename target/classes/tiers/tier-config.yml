@@ -16,159 +16,247 @@ tier-up-notification:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e1&7.'
       - '&7&o((Tier &e1 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 25000'
+    free:
+      commands:
+        - 'eco give {player} 25000'
+    premium:
+      commands:
+        - 'say {player} has received premium rewards.'
 #
 2:
   experience-to-level: 5.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e2&7.'
       - '&7&o((Tier &e2 &7&orewards have been given to you.))'
-    commands:
-      - 't+ give {player} sell stick:0 1 1 50'
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 't+ give {player} sell stick:0 1 1 50'
 #
 3:
   experience-to-level: 10.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e3&7.'
       - '&7&o((Tier &e3 &7&orewards have been given to you.))'
-    commands:
-      - 't+ give {player} trench diamond_pickaxe:0 3 15000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 't+ give {player} trench diamond_pickaxe:0 3 15000'
 #
 4:
   experience-to-level: 15.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e4&7.'
       - '&7&o((Tier &e4 &7&orewards have been given to you.))'
-    commands:
-      - 't+ give {player} harvester diamond_hoe:0 1 5 15000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 't+ give {player} harvester diamond_hoe:0 1 5 15000'
 #
 5:
   experience-to-level: 20.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e5&7.'
       - '&7&o((Tier &e5 &7&orewards have been given to you.))'
-    commands:
-      - 't+ give {player} chunk feather:0 1 2 10'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 't+ give {player} chunk feather:0 1 2 10'
 #
 6:
   experience-to-level: 25.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e6&7.'
       - '&7&o((Tier &e6 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 7:
   experience-to-level: 30.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e7&7.'
       - '&7&o((Tier &e7 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 8:
   experience-to-level: 35.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e8&7.'
       - '&7&o((Tier &e8 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 9:
   experience-to-level: 40.00
+  premium: false
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e9&7.'
       - '&7&o((Tier &e9 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 10:
   experience-to-level: 45.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e10&7.'
       - '&7&o((Tier &e10 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 11:
   experience-to-level: 50.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e11&7.'
       - '&7&o((Tier &e11 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 12:
   experience-to-level: 55.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e12&7.'
       - '&7&o((Tier &e12 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 13:
   experience-to-level: 60.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e13&7.'
       - '&7&o((Tier &e13 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 14:
   experience-to-level: 65.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e14&7.'
       - '&7&o((Tier &e14 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 15:
   experience-to-level: 70.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e15&7.'
       - '&7&o((Tier &e15 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 16:
   experience-to-level: 75.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e16&7.'
       - '&7&o((Tier &e16 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 17:
   experience-to-level: 80.00
+  premium: true
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e17&7.'
       - '&7&o((Tier &e17 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'
 #
 18:
   experience-to-level: 85.00
+  premium: false
   rewards:
     message:
       - '&a&lPass+&2: &7Congratulations you are now tier &e18&7.'
       - '&7&o((Tier &e18 &7&orewards have been given to you.))'
-    commands:
-      - 'eco give {player} 250000'
+    free:
+      commands:
+        - 'eco give {player} 5000'
+    premium:
+      commands:
+        - 'eco give {player} 245000'

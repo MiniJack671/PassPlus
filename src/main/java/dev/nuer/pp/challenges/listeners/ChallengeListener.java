@@ -24,10 +24,10 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void blockBreak(BlockBreakEvent event) {
         if (event.isCancelled()) return;
-        if (!PlayerDataManager.hasCopy(event.getPlayer())) return;
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_mine")) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getBlock().getType().toString().equalsIgnoreCase(challenge.getElement()))
@@ -48,10 +48,10 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void blockPlace(BlockPlaceEvent event) {
         if (event.isCancelled()) return;
-        if (!PlayerDataManager.hasCopy(event.getPlayer())) return;
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_place")) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getBlockPlaced().getType().toString().equalsIgnoreCase(challenge.getElement()))
@@ -72,10 +72,10 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void playerKill(PlayerDeathEvent event) {
         if (event.getEntity().getKiller() == null) return;
-        if (!PlayerDataManager.hasCopy(event.getEntity().getKiller())) return;
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getEntity().getKiller())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_kills")) continue;
                     if (challenge.getProgress(event.getEntity().getKiller()) == -1) continue;
                     challenge.progress(event.getEntity().getKiller());
@@ -103,10 +103,10 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void mobDeath(EntityDeathEvent event) {
         if (event.getEntity().getKiller() == null) return;
-        if (!PlayerDataManager.hasCopy(event.getEntity().getKiller())) return;
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getEntity().getKiller())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_kill_mob")) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getEntity().getType().toString().equalsIgnoreCase(challenge.getElement()))
@@ -123,10 +123,10 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void chat(AsyncPlayerChatEvent event) {
         if (event.isCancelled()) return;
-        if (!PlayerDataManager.hasCopy(event.getPlayer())) return;
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_chat")) continue;
                     if (challenge.getProgress(event.getPlayer()) == -1) continue;
                     challenge.progress(event.getPlayer());
@@ -139,16 +139,11 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void playerFish(PlayerFishEvent event) {
         if (event.getCaught() == null) return;
-        PassPlus.log.info("reaching -1");
-        if (!PlayerDataManager.hasCopy(event.getPlayer())) return;
-        PassPlus.log.info("reaching 0");
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
-            PassPlus.log.info("reaching 1");
             if (challengeWeek.isUnlocked()) {
-                PassPlus.log.info("reaching 2");
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_fish")) continue;
-                    PassPlus.log.info("reaching 3");
 //                    if (!challenge.getElement().equalsIgnoreCase("")) {
 //                        if (!event.getHook().getType().toString().equalsIgnoreCase(challenge.getElement()))
 //                            continue;
@@ -168,10 +163,10 @@ public class ChallengeListener implements Listener {
     @EventHandler
     public void playerEat(PlayerItemConsumeEvent event) {
         if (event.isCancelled()) return;
-        if (!PlayerDataManager.hasCopy(event.getPlayer())) return;
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
+                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
                     if (!challenge.getType().equalsIgnoreCase("player_consume")) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getItem().getType().toString().equalsIgnoreCase(challenge.getElement()))
