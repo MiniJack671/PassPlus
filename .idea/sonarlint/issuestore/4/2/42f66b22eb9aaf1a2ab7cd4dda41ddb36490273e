@@ -1,0 +1,14 @@
+
+Š
+java:S1319["mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(í¯ˆœ8™‹±¯š.
+G
+java:S2629-"%Invoke method(s) only conditionally. (‘Ô·ÿÿÿÿÿ8™‹±¯š.
+z	java:S135="YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8™‹±¯š.
+o
+java:S3776*"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(¤ôêœ8™‹±¯š.
+W
+java:S1874."5Remove this use of "getDurability"; it is deprecated.(ş¡ˆ²ıÿÿÿÿ8™‹±¯š.
+Q
+java:S28643"4Iterate over the "entrySet" instead of the "keySet".(µŸğò8™‹±¯š.
+]	java:S125%"<This block of commented-out lines of code should be removed.(¦Ò†ıÿÿÿÿ8™‹±¯š.
+]	java:S125A"<This block of commented-out lines of code should be removed.(€ ‰Æúÿÿÿÿ8™‹±¯š.

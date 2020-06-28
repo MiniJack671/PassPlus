@@ -1,0 +1,15 @@
+
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8˜‹±¯š.
+l
+java:S1128"JRemove this unused import 'org.bukkit.event.entity.EntityPickupItemEvent'.(ƒ §üşÿÿÿÿ8˜‹±¯š.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ä­Ù8˜‹±¯š.
+_
+java:S1117"=Rename "challenge" which hides the field declared at line 22.(ûÒ”ùÿÿÿÿ8˜‹±¯š.
+_
+java:S18745"=Remove this use of "PlayerPickupItemEvent"; it is deprecated.(åë“®üÿÿÿÿ8˜‹±¯š.
+M
+java:S1874<"1Remove this use of "getTypeId"; it is deprecated.(òºn8˜‹±¯š.
+N
+java:S1874="1Remove this use of "getTypeId"; it is deprecated.(Ó‹ª›8˜‹±¯š.
+X	java:S125 "<This block of commented-out lines of code should be removed.(û¡Çä8˜‹±¯š.

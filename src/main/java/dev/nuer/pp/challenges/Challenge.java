@@ -7,17 +7,39 @@ import dev.nuer.pp.playerData.utils.PlayerFileUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+/**
+ * Challenge class, this is useful for parsing in a challenge from the configuration
+ */
 public class Challenge {
+    //Store the week that the challenge belongs to
     private String week;
-    private String type;
+    //Store the type of challenge
+    private ChallengeType type;
+    //Store the challenge id
     private String challengeId;
+    //Store the active element for the challenge
     private String element;
+    //Store the data value of the active element
     private short dataValue;
+    //Store the total amount of experience acquirable
     private double total;
+    //Store the experience per unit completed
     private double expPer;
+    //Store if the challenge is premium
     private boolean premium;
 
-    public Challenge(String week, String type, String challengeId, String element, short dataValue, double total, double expPer, boolean premium) {
+    /**
+     *
+     * @param week
+     * @param type
+     * @param challengeId
+     * @param element
+     * @param dataValue
+     * @param total
+     * @param expPer
+     * @param premium
+     */
+    public Challenge(String week, ChallengeType type, String challengeId, String element, short dataValue, double total, double expPer, boolean premium) {
         this.week = week;
         this.type = type;
         this.challengeId = challengeId;
@@ -58,7 +80,7 @@ public class Challenge {
         return challengeId;
     }
 
-    public String getType() {
+    public ChallengeType getType() {
         return type;
     }
 

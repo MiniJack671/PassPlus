@@ -33,12 +33,12 @@ public class ChallengeWeek {
 
     private void loadChallenges() {
         PassPlus.log.info("Loading challenges for week: " + week);
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 52; i++) {
             if (FileManager.get("challenges_week_" + week).getString("challenges." + i + ".challenge-id") == null)
                 break;
             YamlConfiguration config = FileManager.get("challenges_week_" + week);
             Challenge challenge = new Challenge(week,
-                    config.getString("challenges." + i + ".type"),
+                    ChallengeType.valueOf(config.getString("challenges." + i + ".type").toUpperCase()),
                     config.getString("challenges." + i + ".challenge-id"),
                     config.getString("challenges." + i + ".active.element"),
                     Short.parseShort(config.getString("challenges." + i + ".active.data-value")),
@@ -57,23 +57,21 @@ public class ChallengeWeek {
     }
 
     public void countdown() {
+        if (!FileManager.get("config").getBoolean("challenge-countdown-enabled")) return;
+        if (unlocked) return;
         if (FileManager.get("unlock_timers").getInt("timers.week-" + week) <= 0) {
             setUnlocked(true);
             return;
         }
-        if (unlocked) {
-            return;
-        }
-        if (!FileManager.get("config").getBoolean("challenge-countdown-enabled")) return;
         //Run the countdown timer
         counterTaskId = Bukkit.getScheduler().runTaskTimer(PassPlus.instance, () -> {
             //Check that the week is still locked
-            if (unlocked) {
-                //Fire the custom event
-                Bukkit.getPluginManager().callEvent(new ChallengeWeekUnlockEvent(this));
-                //Cancel the task
-                counterTaskId.cancel();
-            }
+//            if (unlocked) {
+//                //Fire the custom event
+//                Bukkit.getPluginManager().callEvent(new ChallengeWeekUnlockEvent(this));
+//                //Cancel the task
+//                counterTaskId.cancel();
+//            }
             //Store the time remaining
             int timeRemaining = FileManager.get("unlock_timers").getInt("timers.week-" + week) - 1;
             //Check that the time remaining is greater than 0

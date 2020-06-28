@@ -1,0 +1,16 @@
+
+’
+java:S1319"uThe type of the "challenges" object should be an interface such as "List" rather than the implementation "ArrayList".(·¿ª÷8™‹±¯š.
+k
+java:S1192>"NDefine a constant instead of duplicating this literal "unlock_timers" 4 times.(æ€¶Ð8™‹±¯š.
+n
+java:S1192%"LDefine a constant instead of duplicating this literal "challenges." 8 times.(´Ó„Ìùÿÿÿÿ8™‹±¯š.
+j
+java:S1192>"MDefine a constant instead of duplicating this literal "timers.week-" 3 times.(æ€¶Ð8™‹±¯š.
+Y
+java:S2629#"7Use the built-in formatting to construct this argument.(Ï÷Îøÿÿÿÿÿ8™‹±¯š.
+s
+java:S1104"VMake challenges a static final constant or non-public and provide accessors if needed.(·¿ª÷8™‹±¯š.
+]	java:S125E"<This block of commented-out lines of code should be removed.(öÓàíùÿÿÿÿ8™‹±¯š.
+X	java:S125G"<This block of commented-out lines of code should be removed.(ç¬Îò8™‹±¯š.
+X	java:S125I"<This block of commented-out lines of code should be removed.(ÓÑÚØ8™‹±¯š.

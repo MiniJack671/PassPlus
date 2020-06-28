@@ -12,6 +12,9 @@ challenge-countdown-enabled: true
 # If the update message will be sent to OPs
 update-version-message: true
 
+# How long the progress bar is in characters
+progress-bar-length: 30
+
 # give notification (for the receiver)
 give-notification:
   message:

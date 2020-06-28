@@ -4,7 +4,10 @@ import dev.nuer.pp.cmd.PassAdminCmd;
 import dev.nuer.pp.cmd.PassCmd;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.enable.SetupManager;
+import dev.nuer.pp.papi.PassPlusExpansion;
+import dev.nuer.pp.utils.SecondCountdownUtil;
 import dev.nuer.pp.utils.VersionUtil;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.text.DecimalFormat;
@@ -21,7 +24,7 @@ public final class PassPlus extends JavaPlugin {
     //Static way to format price placeholders
     public static DecimalFormat numberFormat = new DecimalFormat("#,###.##");
     //Store the version string
-    public static String version = "0.9.2.1";
+    public static String version = "0.9.2.4";
 
     /**
      * Method called on plugin start up
@@ -42,6 +45,13 @@ public final class PassPlus extends JavaPlugin {
         if (FileManager.get("config").getBoolean("update-version-message")) {
             VersionUtil.checkVersion(null);
             getServer().getPluginManager().registerEvents(new VersionUtil(), this);
+        }
+        //Instanciate the second timer
+        SecondCountdownUtil.countdown();
+        //
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            log.info("PlaceholderAPI found, registering expansions with it now...");
+            new PassPlusExpansion(instance).register();
         }
         //Send a nice message
         log.info("Thank you for using Pass+! If you find any bugs please contact nbdSteve#0583 on discord.");

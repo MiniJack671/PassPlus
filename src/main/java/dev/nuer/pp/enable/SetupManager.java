@@ -1,8 +1,6 @@
 package dev.nuer.pp.enable;
 
-import dev.nuer.pp.challenges.listeners.ChallengeListener;
-import dev.nuer.pp.challenges.listeners.ChallengeWeekUnlockListener;
-import dev.nuer.pp.challenges.listeners.PlayerChallengeCompletedListener;
+import dev.nuer.pp.challenges.listeners.*;
 import dev.nuer.pp.experience.listeners.ExperienceTierListener;
 import dev.nuer.pp.gui.listener.GuiClickListener;
 import dev.nuer.pp.playerData.listeners.DataCreationOnJoin;
@@ -47,5 +45,7 @@ public class SetupManager {
         pm.registerEvents(new ChallengeWeekUnlockListener(), instance);
         pm.registerEvents(new PlayerChallengeCompletedListener(), instance);
         pm.registerEvents(new ChallengeListener(), instance);
+        pm.registerEvents(new FishChallengeListener(), instance);
+//        pm.registerEvents(new BrewChallengeListener(), instance);
     }
 }

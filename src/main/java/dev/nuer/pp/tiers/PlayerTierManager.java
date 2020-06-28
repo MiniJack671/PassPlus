@@ -1,5 +1,6 @@
 package dev.nuer.pp.tiers;
 
+import dev.nuer.pp.PassPlus;
 import dev.nuer.pp.enable.FileManager;
 import dev.nuer.pp.playerData.PlayerDataManager;
 import dev.nuer.pp.playerData.utils.PlayerFileUtil;
@@ -35,7 +36,9 @@ public class PlayerTierManager {
         //Register the increment events if the tier is increasing
         if (tier > getTier(player)) {
             for (int i = 0; i < tier - getTier(player); i++) {
-                Bukkit.getPluginManager().callEvent(new PlayerTierUpEvent(player, tier));
+                Bukkit.getScheduler().runTask(PassPlus.instance, () -> {
+                    Bukkit.getPluginManager().callEvent(new PlayerTierUpEvent(player, tier));
+                });
             }
         }
         PlayerFileUtil pfu = PlayerDataManager.getPlayerFile(player);

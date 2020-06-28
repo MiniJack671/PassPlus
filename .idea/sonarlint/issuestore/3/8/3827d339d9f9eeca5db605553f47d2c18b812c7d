@@ -1,0 +1,21 @@
+
+J
+java:S1444".Make this "public static instance" field final(è¬’!8š‹±¯š.
+F
+java:S1444")Make this "public static log" field final(ÖÌåâ8š‹±¯š.
+T
+java:S1444"2Make this "public static numberFormat" field final(äı¯ıüÿÿÿÿ8š‹±¯š.
+J
+java:S1444"-Make this "public static version" field final(ß“û8š‹±¯š.
+p
+java:S1104"TMake instance a static final constant or non-public and provide accessors if needed.(è¬’!8š‹±¯š.
+l
+java:S1104"OMake log a static final constant or non-public and provide accessors if needed.(ÖÌåâ8š‹±¯š.
+z
+java:S1104"XMake numberFormat a static final constant or non-public and provide accessors if needed.(äı¯ıüÿÿÿÿ8š‹±¯š.
+p
+java:S1104"SMake version a static final constant or non-public and provide accessors if needed.(ß“û8š‹±¯š.
+X
+java:S2696!"6Make the enclosing method "static" or remove this set.(ñõîÙşÿÿÿÿ8š‹±¯š.
+X
+java:S2696#"6Make the enclosing method "static" or remove this set.(•‰Óºûÿÿÿÿ8š‹±¯š.

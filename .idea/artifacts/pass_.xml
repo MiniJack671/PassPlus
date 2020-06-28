@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="pass+">
-    <output-path>$USER_HOME$/Desktop/minecraft/server stuff/Server Files/plugins</output-path>
+    <output-path>$PROJECT_DIR$/../../test-server/spigot-server/plugins</output-path>
     <root id="archive" name="pass+.jar">
       <element id="module-output" name="PassPlus" />
     </root>

@@ -6,7 +6,7 @@
 
     <groupId>dev.nuer</groupId>
     <artifactId>PassPlus</artifactId>
-    <version>0.9.2.1</version>
+    <version>0.9.2.4</version>
     <packaging>jar</packaging>
 
     <name>PassPlus</name>
@@ -66,13 +66,25 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.14.1-R0.1-SNAPSHOT</version>
+            <version>1.16.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--for placeholder integration-->
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.10.3</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

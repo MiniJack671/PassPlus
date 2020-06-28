@@ -1,0 +1,33 @@
+
+Q
+java:S1066&"/Merge this if statement with the enclosing one.(­§ˆÿÿÿÿÿ8š‹±¯š.
+Q
+java:S1066>"/Merge this if statement with the enclosing one.(ÙÛÿóúÿÿÿÿ8š‹±¯š.
+Q
+java:S1066r"/Merge this if statement with the enclosing one.(‘ò’†ÿÿÿÿÿ8š‹±¯š.
+M
+java:S1066±"/Merge this if statement with the enclosing one.(Õ¤İğ8š‹±¯š.
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+z	java:S1357"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+z	java:S135O"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+z	java:S135_"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+z	java:S135n"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+{	java:S135‚"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+{	java:S135ª"YReduce the total number of break and continue statements in this loop to use at most one.(ûÒ”ùÿÿÿÿ8š‹±¯š.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(ÊúõÓ8š‹±¯š.
+t
+java:S37763"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(˜˜ì©ÿÿÿÿÿ8š‹±¯š.
+t
+java:S3776K"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Áİù´øÿÿÿÿ8š‹±¯š.
+o
+java:S3776j"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Ì†´Ö8š‹±¯š.
+o
+java:S3776~"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ÔÆöì8š‹±¯š.
+p
+java:S3776¦"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(’»ÑÖ8š‹±¯š.
+S
+java:S1874±"5Remove this use of "getDurability"; it is deprecated.(Õ¤İğ8š‹±¯š.
+Y	java:S125"<This block of commented-out lines of code should be removed.(Ğ™”Ü8š‹±¯š.
+^	java:S125¾"<This block of commented-out lines of code should be removed.(¢‰ˆõıÿÿÿÿ8š‹±¯š.
+^	java:S125Á"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8š‹±¯š.

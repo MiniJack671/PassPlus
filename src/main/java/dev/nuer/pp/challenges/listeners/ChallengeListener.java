@@ -2,6 +2,7 @@ package dev.nuer.pp.challenges.listeners;
 
 import dev.nuer.pp.PassPlus;
 import dev.nuer.pp.challenges.Challenge;
+import dev.nuer.pp.challenges.ChallengeType;
 import dev.nuer.pp.challenges.ChallengeWeek;
 import dev.nuer.pp.enable.WeeklyChallengeManager;
 import dev.nuer.pp.playerData.PlayerDataManager;
@@ -11,6 +12,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.inventory.BrewEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
@@ -28,7 +30,7 @@ public class ChallengeListener implements Listener {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_mine")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_MINE)) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getBlock().getType().toString().equalsIgnoreCase(challenge.getElement()))
                             continue;
@@ -52,7 +54,7 @@ public class ChallengeListener implements Listener {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_place")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_PLACE)) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getBlockPlaced().getType().toString().equalsIgnoreCase(challenge.getElement()))
                             continue;
@@ -76,7 +78,7 @@ public class ChallengeListener implements Listener {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getEntity().getKiller())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_kills")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_KILLS)) continue;
                     if (challenge.getProgress(event.getEntity().getKiller()) == -1) continue;
                     challenge.progress(event.getEntity().getKiller());
                 }
@@ -91,7 +93,7 @@ public class ChallengeListener implements Listener {
         for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
-                    if (!challenge.getType().equalsIgnoreCase("player_deaths")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_DEATHS)) continue;
                     if (challenge.getProgress(event.getEntity()) == -1) continue;
                     challenge.progress(event.getEntity());
                 }
@@ -107,7 +109,7 @@ public class ChallengeListener implements Listener {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getEntity().getKiller())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_kill_mob")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_KILL_MOB)) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getEntity().getType().toString().equalsIgnoreCase(challenge.getElement()))
                             continue;
@@ -127,7 +129,7 @@ public class ChallengeListener implements Listener {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_chat")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_CHAT)) continue;
                     if (challenge.getProgress(event.getPlayer()) == -1) continue;
                     challenge.progress(event.getPlayer());
                 }
@@ -136,28 +138,28 @@ public class ChallengeListener implements Listener {
     }
 
     //Player fish challenge
-    @EventHandler
-    public void playerFish(PlayerFishEvent event) {
-        if (event.getCaught() == null) return;
-        for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
-            if (challengeWeek.isUnlocked()) {
-                for (Challenge challenge : challengeWeek.challenges) {
-                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_fish")) continue;
-//                    if (!challenge.getElement().equalsIgnoreCase("")) {
-//                        if (!event.getHook().getType().toString().equalsIgnoreCase(challenge.getElement()))
-//                            continue;
-//                        if (challenge.getDataValue() != -1) {
-//                            PassPlus.log.info("" + event.getCaught().getType().getTypeId());
-//                            if (event.getCaught().getType().getTypeId() != challenge.getDataValue()) continue;
-//                        }
-//                    }
-                    if (challenge.getProgress(event.getPlayer()) == -1) continue;
-                    challenge.progress(event.getPlayer());
-                }
-            }
-        }
-    }
+//    @EventHandler
+//    public void playerFish(PlayerFishEvent event) {
+//        if (event.getCaught() == null) return;
+//        for (ChallengeWeek challengeWeek : WeeklyChallengeManager.weeks.values()) {
+//            if (challengeWeek.isUnlocked()) {
+//                for (Challenge challenge : challengeWeek.challenges) {
+//                    if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
+//                    if (!challenge.getType().equals(ChallengeType.PLAYER_FISH)) continue;
+////                    if (!challenge.getElement().equalsIgnoreCase("")) {
+////                        if (!event.getHook().getType().toString().equalsIgnoreCase(challenge.getElement()))
+////                            continue;
+////                        if (challenge.getDataValue() != -1) {
+////                            PassPlus.log.info("" + event.getCaught().getType().getTypeId());
+////                            if (event.getCaught().getType().getTypeId() != challenge.getDataValue()) continue;
+////                        }
+////                    }
+//                    if (challenge.getProgress(event.getPlayer()) == -1) continue;
+//                    challenge.progress(event.getPlayer());
+//                }
+//            }
+//        }
+//    }
 
     //Player consume food event
     @EventHandler
@@ -167,7 +169,7 @@ public class ChallengeListener implements Listener {
             if (challengeWeek.isUnlocked()) {
                 for (Challenge challenge : challengeWeek.challenges) {
                     if (challenge.isPremium() && !PlayerDataManager.hasCopy(event.getPlayer())) continue;
-                    if (!challenge.getType().equalsIgnoreCase("player_consume")) continue;
+                    if (!challenge.getType().equals(ChallengeType.PLAYER_CONSUME)) continue;
                     if (!challenge.getElement().equalsIgnoreCase("")) {
                         if (!event.getItem().getType().toString().equalsIgnoreCase(challenge.getElement()))
                             continue;

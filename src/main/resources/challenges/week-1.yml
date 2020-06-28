@@ -309,3 +309,13 @@ challenges:
       total: 10 # eat 25 notch apples
       experience-per: 0.4
     premium: true
+  10:
+    type: 'player_brew'
+    challenge-id: 'week_1-challenge_10'
+    active:
+      element: ''
+      data-value: '0'
+    completion-requirements:
+      total: 5
+      experience-per: 0.8
+    premium: false

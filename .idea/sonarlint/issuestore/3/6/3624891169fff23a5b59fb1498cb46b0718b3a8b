@@ -1,0 +1,6 @@
+
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(¼ß…ıüÿÿÿÿ
+Usquid:S3516"9Refactor this method to not always return the same value.(¼ß…ıüÿÿÿÿ
+]squid:S1192"GDefine a constant instead of duplicating this literal "{node}" 5 times.(öÒëH
+esquid:S1192"IDefine a constant instead of duplicating this literal "messages" 7 times.(í‡äìúÿÿÿÿ
+gsquid:S1192"QDefine a constant instead of duplicating this literal "permission-debug" 5 times.(öÒëH

@@ -1,0 +1,8 @@
+
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(„‰®å
+csquid:S1192'"GDefine a constant instead of duplicating this literal "config" 7 times.(¼Ñèãÿÿÿÿÿ
+`squid:S2259,"DA "NullPointerException" could be thrown; "target" is nullable here.(ç‚Žùÿÿÿÿÿ
+[squid:S2259 "DA "NullPointerException" could be thrown; "target" is nullable here.(Ëáüó
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö‹õ¬
+`squid:S22595"DA "NullPointerException" could be thrown; "target" is nullable here.(ƒù¶îþÿÿÿÿ
+[squid:S22593"DA "NullPointerException" could be thrown; "target" is nullable here.(Êõ²µ
